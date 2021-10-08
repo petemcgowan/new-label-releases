@@ -1,0 +1,1622 @@
+{
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?query=label%3AToy+Tonics&type=track&market=DE&offset=0&limit=20",
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4kxy1QkX4bcSvzxS4ZgtXI"
+          },
+          "href": "https://api.spotify.com/v1/albums/4kxy1QkX4bcSvzxS4ZgtXI",
+          "id": "4kxy1QkX4bcSvzxS4ZgtXI",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27312e75c224707fd9967bae339",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0212e75c224707fd9967bae339",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485112e75c224707fd9967bae339",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 8",
+          "release_date": "2020-08-21",
+          "release_date_precision": "day",
+          "total_tracks": 14,
+          "type": "album",
+          "uri": "spotify:album:4kxy1QkX4bcSvzxS4ZgtXI"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3sySIHNL0hqR7eOlm3LNTH"
+            },
+            "href": "https://api.spotify.com/v1/artists/3sySIHNL0hqR7eOlm3LNTH",
+            "id": "3sySIHNL0hqR7eOlm3LNTH",
+            "name": "Kapote",
+            "type": "artist",
+            "uri": "spotify:artist:3sySIHNL0hqR7eOlm3LNTH"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 283010,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200488"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/5Wq8QGuRpVOtCRsQDIg1x8"
+        },
+        "href": "https://api.spotify.com/v1/tracks/5Wq8QGuRpVOtCRsQDIg1x8",
+        "id": "5Wq8QGuRpVOtCRsQDIg1x8",
+        "is_local": false,
+        "is_playable": true,
+        "name": "L.O.V.E. 2020 (NYC Tribute)",
+        "popularity": 13,
+        "preview_url": "https://p.scdn.co/mp3-preview/98314462dc902ab53878886bbf18df5db842d17a?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 3,
+        "type": "track",
+        "uri": "spotify:track:5Wq8QGuRpVOtCRsQDIg1x8"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/3uiHnHyC3MRX2MpGq8hwKF"
+          },
+          "href": "https://api.spotify.com/v1/albums/3uiHnHyC3MRX2MpGq8hwKF",
+          "id": "3uiHnHyC3MRX2MpGq8hwKF",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273185763b87e1d81a47ee96c13",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02185763b87e1d81a47ee96c13",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851185763b87e1d81a47ee96c13",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 7",
+          "release_date": "2019-08-23",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:3uiHnHyC3MRX2MpGq8hwKF"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5x3mrCTZmkoTXURN7pWdGN"
+            },
+            "href": "https://api.spotify.com/v1/artists/5x3mrCTZmkoTXURN7pWdGN",
+            "id": "5x3mrCTZmkoTXURN7pWdGN",
+            "name": "Los Amigos Invisibles",
+            "type": "artist",
+            "uri": "spotify:artist:5x3mrCTZmkoTXURN7pWdGN"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5Il27M5JXuQLgwDgVrQMgo"
+            },
+            "href": "https://api.spotify.com/v1/artists/5Il27M5JXuQLgwDgVrQMgo",
+            "id": "5Il27M5JXuQLgwDgVrQMgo",
+            "name": "Dimitri From Paris",
+            "type": "artist",
+            "uri": "spotify:artist:5Il27M5JXuQLgwDgVrQMgo"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 223448,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200435"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/5kLjVlULPCgJ0LtvxHGEL9"
+        },
+        "href": "https://api.spotify.com/v1/tracks/5kLjVlULPCgJ0LtvxHGEL9",
+        "id": "5kLjVlULPCgJ0LtvxHGEL9",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Glad To Know You",
+        "popularity": 10,
+        "preview_url": "https://p.scdn.co/mp3-preview/952054420fd0dd1b7f5555950a0f9ce9133d5d2c?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:5kLjVlULPCgJ0LtvxHGEL9"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4kxy1QkX4bcSvzxS4ZgtXI"
+          },
+          "href": "https://api.spotify.com/v1/albums/4kxy1QkX4bcSvzxS4ZgtXI",
+          "id": "4kxy1QkX4bcSvzxS4ZgtXI",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27312e75c224707fd9967bae339",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0212e75c224707fd9967bae339",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485112e75c224707fd9967bae339",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 8",
+          "release_date": "2020-08-21",
+          "release_date_precision": "day",
+          "total_tracks": 14,
+          "type": "album",
+          "uri": "spotify:album:4kxy1QkX4bcSvzxS4ZgtXI"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3OoNpyvA82LedOZWG3WE8Z"
+            },
+            "href": "https://api.spotify.com/v1/artists/3OoNpyvA82LedOZWG3WE8Z",
+            "id": "3OoNpyvA82LedOZWG3WE8Z",
+            "name": "Coeo",
+            "type": "artist",
+            "uri": "spotify:artist:3OoNpyvA82LedOZWG3WE8Z"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 343663,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200417"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/3hPgQW99S98YAuc9BXxooW"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3hPgQW99S98YAuc9BXxooW",
+        "id": "3hPgQW99S98YAuc9BXxooW",
+        "is_local": false,
+        "is_playable": true,
+        "name": "What's Going On",
+        "popularity": 10,
+        "preview_url": "https://p.scdn.co/mp3-preview/41fbaabd2589133248932914bcb8d93e9c62ea34?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 7,
+        "type": "track",
+        "uri": "spotify:track:3hPgQW99S98YAuc9BXxooW"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/5PfkEKFVRu0eK15YC0BaCH"
+          },
+          "href": "https://api.spotify.com/v1/albums/5PfkEKFVRu0eK15YC0BaCH",
+          "id": "5PfkEKFVRu0eK15YC0BaCH",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2735360e2ba90015abeff5e34c6",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e025360e2ba90015abeff5e34c6",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048515360e2ba90015abeff5e34c6",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 5",
+          "release_date": "2017-07-28",
+          "release_date_precision": "day",
+          "total_tracks": 10,
+          "type": "album",
+          "uri": "spotify:album:5PfkEKFVRu0eK15YC0BaCH"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4yITT4lWMZ6Dmb5hQvyFZc"
+            },
+            "href": "https://api.spotify.com/v1/artists/4yITT4lWMZ6Dmb5hQvyFZc",
+            "id": "4yITT4lWMZ6Dmb5hQvyFZc",
+            "name": "Doug Gomez",
+            "type": "artist",
+            "uri": "spotify:artist:4yITT4lWMZ6Dmb5hQvyFZc"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 463405,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200282"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0AEnzbPyCORZuQdYEKrZWd"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0AEnzbPyCORZuQdYEKrZWd",
+        "id": "0AEnzbPyCORZuQdYEKrZWd",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Make Your Body Move",
+        "popularity": 5,
+        "preview_url": "https://p.scdn.co/mp3-preview/43000f921b75447804cadbb6dd431b53a4221c51?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 9,
+        "type": "track",
+        "uri": "spotify:track:0AEnzbPyCORZuQdYEKrZWd"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/3uiHnHyC3MRX2MpGq8hwKF"
+          },
+          "href": "https://api.spotify.com/v1/albums/3uiHnHyC3MRX2MpGq8hwKF",
+          "id": "3uiHnHyC3MRX2MpGq8hwKF",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273185763b87e1d81a47ee96c13",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02185763b87e1d81a47ee96c13",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851185763b87e1d81a47ee96c13",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 7",
+          "release_date": "2019-08-23",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:3uiHnHyC3MRX2MpGq8hwKF"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4S8UOAApPhwz9WcVOj13VO"
+            },
+            "href": "https://api.spotify.com/v1/artists/4S8UOAApPhwz9WcVOj13VO",
+            "id": "4S8UOAApPhwz9WcVOj13VO",
+            "name": "The Phenomenal Handclap Band",
+            "type": "artist",
+            "uri": "spotify:artist:4S8UOAApPhwz9WcVOj13VO"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/58cSkLlJKQgbPGKph5569D"
+            },
+            "href": "https://api.spotify.com/v1/artists/58cSkLlJKQgbPGKph5569D",
+            "id": "58cSkLlJKQgbPGKph5569D",
+            "name": "Marcel Vogel",
+            "type": "artist",
+            "uri": "spotify:artist:58cSkLlJKQgbPGKph5569D"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 352906,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200436"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1hiqL1V20yG3fbE4PRdyVh"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1hiqL1V20yG3fbE4PRdyVh",
+        "id": "1hiqL1V20yG3fbE4PRdyVh",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Jail - Marcel Vogel Remix",
+        "popularity": 2,
+        "preview_url": "https://p.scdn.co/mp3-preview/17633e713b6ad0d1ffac0b4e1abcfe9da417f0aa?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 2,
+        "type": "track",
+        "uri": "spotify:track:1hiqL1V20yG3fbE4PRdyVh"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4kxy1QkX4bcSvzxS4ZgtXI"
+          },
+          "href": "https://api.spotify.com/v1/albums/4kxy1QkX4bcSvzxS4ZgtXI",
+          "id": "4kxy1QkX4bcSvzxS4ZgtXI",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27312e75c224707fd9967bae339",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0212e75c224707fd9967bae339",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485112e75c224707fd9967bae339",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 8",
+          "release_date": "2020-08-21",
+          "release_date_precision": "day",
+          "total_tracks": 14,
+          "type": "album",
+          "uri": "spotify:album:4kxy1QkX4bcSvzxS4ZgtXI"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0IySrk0S2gbAoxaYyPHEZD"
+            },
+            "href": "https://api.spotify.com/v1/artists/0IySrk0S2gbAoxaYyPHEZD",
+            "id": "0IySrk0S2gbAoxaYyPHEZD",
+            "name": "Mangabey",
+            "type": "artist",
+            "uri": "spotify:artist:0IySrk0S2gbAoxaYyPHEZD"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5xPHGeNecDlCoEezCF2bWn"
+            },
+            "href": "https://api.spotify.com/v1/artists/5xPHGeNecDlCoEezCF2bWn",
+            "id": "5xPHGeNecDlCoEezCF2bWn",
+            "name": "Kosmo Kint",
+            "type": "artist",
+            "uri": "spotify:artist:5xPHGeNecDlCoEezCF2bWn"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 300877,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200464"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4nfhUELD4gNFvcw3ndKzYD"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4nfhUELD4gNFvcw3ndKzYD",
+        "id": "4nfhUELD4gNFvcw3ndKzYD",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Time No More",
+        "popularity": 2,
+        "preview_url": "https://p.scdn.co/mp3-preview/9e0092bf187f046244249c5f7dcbc69a7c148084?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 8,
+        "type": "track",
+        "uri": "spotify:track:4nfhUELD4gNFvcw3ndKzYD"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/473kFLqJgEcfV4RXvIqwW6"
+          },
+          "href": "https://api.spotify.com/v1/albums/473kFLqJgEcfV4RXvIqwW6",
+          "id": "473kFLqJgEcfV4RXvIqwW6",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c1c40a28b90e82496c573784",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c1c40a28b90e82496c573784",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c1c40a28b90e82496c573784",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 4",
+          "release_date": "2016-08-12",
+          "release_date_precision": "day",
+          "total_tracks": 10,
+          "type": "album",
+          "uri": "spotify:album:473kFLqJgEcfV4RXvIqwW6"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2tSi13f4Wy3KxKpwKW3FV2"
+            },
+            "href": "https://api.spotify.com/v1/artists/2tSi13f4Wy3KxKpwKW3FV2",
+            "id": "2tSi13f4Wy3KxKpwKW3FV2",
+            "name": "Alixander III",
+            "type": "artist",
+            "uri": "spotify:artist:2tSi13f4Wy3KxKpwKW3FV2"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7iy0pcdR0sJ49I6UeSzEhI"
+            },
+            "href": "https://api.spotify.com/v1/artists/7iy0pcdR0sJ49I6UeSzEhI",
+            "id": "7iy0pcdR0sJ49I6UeSzEhI",
+            "name": "Marsupials",
+            "type": "artist",
+            "uri": "spotify:artist:7iy0pcdR0sJ49I6UeSzEhI"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 329605,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200215"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/5P7KFZyPrbE8mzwzQhm9Cx"
+        },
+        "href": "https://api.spotify.com/v1/tracks/5P7KFZyPrbE8mzwzQhm9Cx",
+        "id": "5P7KFZyPrbE8mzwzQhm9Cx",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Broken Promises",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/0d1fb14262d38d4d79a15515bd357100a6b67740?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 7,
+        "type": "track",
+        "uri": "spotify:track:5P7KFZyPrbE8mzwzQhm9Cx"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/5PfkEKFVRu0eK15YC0BaCH"
+          },
+          "href": "https://api.spotify.com/v1/albums/5PfkEKFVRu0eK15YC0BaCH",
+          "id": "5PfkEKFVRu0eK15YC0BaCH",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2735360e2ba90015abeff5e34c6",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e025360e2ba90015abeff5e34c6",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048515360e2ba90015abeff5e34c6",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 5",
+          "release_date": "2017-07-28",
+          "release_date_precision": "day",
+          "total_tracks": 10,
+          "type": "album",
+          "uri": "spotify:album:5PfkEKFVRu0eK15YC0BaCH"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2UMMVkgNVl50GCP1goIBRe"
+            },
+            "href": "https://api.spotify.com/v1/artists/2UMMVkgNVl50GCP1goIBRe",
+            "id": "2UMMVkgNVl50GCP1goIBRe",
+            "name": "Adesse Versions",
+            "type": "artist",
+            "uri": "spotify:artist:2UMMVkgNVl50GCP1goIBRe"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 324022,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200276"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0uK9fObM3ZU3uCVL94awXB"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0uK9fObM3ZU3uCVL94awXB",
+        "id": "0uK9fObM3ZU3uCVL94awXB",
+        "is_local": false,
+        "is_playable": true,
+        "name": "After Hours",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/52ef632edcc2ab667310fded72b4ffb510a2bd54?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 3,
+        "type": "track",
+        "uri": "spotify:track:0uK9fObM3ZU3uCVL94awXB"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/473kFLqJgEcfV4RXvIqwW6"
+          },
+          "href": "https://api.spotify.com/v1/albums/473kFLqJgEcfV4RXvIqwW6",
+          "id": "473kFLqJgEcfV4RXvIqwW6",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c1c40a28b90e82496c573784",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c1c40a28b90e82496c573784",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c1c40a28b90e82496c573784",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 4",
+          "release_date": "2016-08-12",
+          "release_date_precision": "day",
+          "total_tracks": 10,
+          "type": "album",
+          "uri": "spotify:album:473kFLqJgEcfV4RXvIqwW6"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0LfsCyVfgK3IQnfUrW6j05"
+            },
+            "href": "https://api.spotify.com/v1/artists/0LfsCyVfgK3IQnfUrW6j05",
+            "id": "0LfsCyVfgK3IQnfUrW6j05",
+            "name": "Uabos",
+            "type": "artist",
+            "uri": "spotify:artist:0LfsCyVfgK3IQnfUrW6j05"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0cG9dZ6X8YfLeGe24QWMwM"
+            },
+            "href": "https://api.spotify.com/v1/artists/0cG9dZ6X8YfLeGe24QWMwM",
+            "id": "0cG9dZ6X8YfLeGe24QWMwM",
+            "name": "Legowelt",
+            "type": "artist",
+            "uri": "spotify:artist:0cG9dZ6X8YfLeGe24QWMwM"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 395363,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200218"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/75ar1qg9mt4RE2QTBs8bnX"
+        },
+        "href": "https://api.spotify.com/v1/tracks/75ar1qg9mt4RE2QTBs8bnX",
+        "id": "75ar1qg9mt4RE2QTBs8bnX",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Emergency Call - Legowelt Remix",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/d3f49ed3946cef81673f933c084c8e02417974f0?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 10,
+        "type": "track",
+        "uri": "spotify:track:75ar1qg9mt4RE2QTBs8bnX"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/5PfkEKFVRu0eK15YC0BaCH"
+          },
+          "href": "https://api.spotify.com/v1/albums/5PfkEKFVRu0eK15YC0BaCH",
+          "id": "5PfkEKFVRu0eK15YC0BaCH",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2735360e2ba90015abeff5e34c6",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e025360e2ba90015abeff5e34c6",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048515360e2ba90015abeff5e34c6",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 5",
+          "release_date": "2017-07-28",
+          "release_date_precision": "day",
+          "total_tracks": 10,
+          "type": "album",
+          "uri": "spotify:album:5PfkEKFVRu0eK15YC0BaCH"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3tA0d4G3jC6CXf6MXEZE5T"
+            },
+            "href": "https://api.spotify.com/v1/artists/3tA0d4G3jC6CXf6MXEZE5T",
+            "id": "3tA0d4G3jC6CXf6MXEZE5T",
+            "name": "Rhode & Brown",
+            "type": "artist",
+            "uri": "spotify:artist:3tA0d4G3jC6CXf6MXEZE5T"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 439077,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200279"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0vpO0yzUSoxd7qhTfgHbMx"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0vpO0yzUSoxd7qhTfgHbMx",
+        "id": "0vpO0yzUSoxd7qhTfgHbMx",
+        "is_local": false,
+        "is_playable": true,
+        "name": "St. Hippolyte",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/18bac09a1bfd2d966183146bbe9199a5fda7e6d0?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 6,
+        "type": "track",
+        "uri": "spotify:track:0vpO0yzUSoxd7qhTfgHbMx"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/3uiHnHyC3MRX2MpGq8hwKF"
+          },
+          "href": "https://api.spotify.com/v1/albums/3uiHnHyC3MRX2MpGq8hwKF",
+          "id": "3uiHnHyC3MRX2MpGq8hwKF",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273185763b87e1d81a47ee96c13",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02185763b87e1d81a47ee96c13",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851185763b87e1d81a47ee96c13",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 7",
+          "release_date": "2019-08-23",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:3uiHnHyC3MRX2MpGq8hwKF"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7rQKvsWUOJgXmInx2JuaXj"
+            },
+            "href": "https://api.spotify.com/v1/artists/7rQKvsWUOJgXmInx2JuaXj",
+            "id": "7rQKvsWUOJgXmInx2JuaXj",
+            "name": "Felipe Gordon",
+            "type": "artist",
+            "uri": "spotify:artist:7rQKvsWUOJgXmInx2JuaXj"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5aQJfpswjW3M2Fx3oPOsnP"
+            },
+            "href": "https://api.spotify.com/v1/artists/5aQJfpswjW3M2Fx3oPOsnP",
+            "id": "5aQJfpswjW3M2Fx3oPOsnP",
+            "name": "Pontchartrain",
+            "type": "artist",
+            "uri": "spotify:artist:5aQJfpswjW3M2Fx3oPOsnP"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 364402,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200445"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/3H5oDY7vBu6UEBqZnhfctF"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3H5oDY7vBu6UEBqZnhfctF",
+        "id": "3H5oDY7vBu6UEBqZnhfctF",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Tell Me Something True - Pontchartrain Remix",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/138771dc76789c6025dc60c8936162a574b98085?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 11,
+        "type": "track",
+        "uri": "spotify:track:3H5oDY7vBu6UEBqZnhfctF"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/5PfkEKFVRu0eK15YC0BaCH"
+          },
+          "href": "https://api.spotify.com/v1/albums/5PfkEKFVRu0eK15YC0BaCH",
+          "id": "5PfkEKFVRu0eK15YC0BaCH",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2735360e2ba90015abeff5e34c6",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e025360e2ba90015abeff5e34c6",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048515360e2ba90015abeff5e34c6",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 5",
+          "release_date": "2017-07-28",
+          "release_date_precision": "day",
+          "total_tracks": 10,
+          "type": "album",
+          "uri": "spotify:album:5PfkEKFVRu0eK15YC0BaCH"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2Yzvf1lIeZiSJQUmuYkWYY"
+            },
+            "href": "https://api.spotify.com/v1/artists/2Yzvf1lIeZiSJQUmuYkWYY",
+            "id": "2Yzvf1lIeZiSJQUmuYkWYY",
+            "name": "Metropolitan Soul Museum",
+            "type": "artist",
+            "uri": "spotify:artist:2Yzvf1lIeZiSJQUmuYkWYY"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3tUtnhxnXl3zZdQUOpcyq6"
+            },
+            "href": "https://api.spotify.com/v1/artists/3tUtnhxnXl3zZdQUOpcyq6",
+            "id": "3tUtnhxnXl3zZdQUOpcyq6",
+            "name": "Tuff City Kids",
+            "type": "artist",
+            "uri": "spotify:artist:3tUtnhxnXl3zZdQUOpcyq6"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 408205,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200278"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2udgyl3P8OaiHwP2i2FsJE"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2udgyl3P8OaiHwP2i2FsJE",
+        "id": "2udgyl3P8OaiHwP2i2FsJE",
+        "is_local": false,
+        "is_playable": true,
+        "name": "A&E - Tuff City Kids Remix",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/d4798a245457b4321f3d5fa8ff075953729851ba?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 5,
+        "type": "track",
+        "uri": "spotify:track:2udgyl3P8OaiHwP2i2FsJE"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/5PfkEKFVRu0eK15YC0BaCH"
+          },
+          "href": "https://api.spotify.com/v1/albums/5PfkEKFVRu0eK15YC0BaCH",
+          "id": "5PfkEKFVRu0eK15YC0BaCH",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2735360e2ba90015abeff5e34c6",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e025360e2ba90015abeff5e34c6",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048515360e2ba90015abeff5e34c6",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 5",
+          "release_date": "2017-07-28",
+          "release_date_precision": "day",
+          "total_tracks": 10,
+          "type": "album",
+          "uri": "spotify:album:5PfkEKFVRu0eK15YC0BaCH"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6Az39XpK7QuHucFPG5pSHQ"
+            },
+            "href": "https://api.spotify.com/v1/artists/6Az39XpK7QuHucFPG5pSHQ",
+            "id": "6Az39XpK7QuHucFPG5pSHQ",
+            "name": "Kian T",
+            "type": "artist",
+            "uri": "spotify:artist:6Az39XpK7QuHucFPG5pSHQ"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 385025,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200283"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/07sGbZngzH6NUaMkGlcWUF"
+        },
+        "href": "https://api.spotify.com/v1/tracks/07sGbZngzH6NUaMkGlcWUF",
+        "id": "07sGbZngzH6NUaMkGlcWUF",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Room 69",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/d86375cb9b438dc070855fced366a32b5270cfb7?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 10,
+        "type": "track",
+        "uri": "spotify:track:07sGbZngzH6NUaMkGlcWUF"
+      },
+      {
+        "album": {
+          "album_type": "compilation",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/0cgG1miZTUdU6P1OFhOGv6"
+          },
+          "href": "https://api.spotify.com/v1/albums/0cgG1miZTUdU6P1OFhOGv6",
+          "id": "0cgG1miZTUdU6P1OFhOGv6",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27311580f92dd327e949e918305",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0211580f92dd327e949e918305",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485111580f92dd327e949e918305",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 6",
+          "release_date": "2018-07-06",
+          "release_date_precision": "day",
+          "total_tracks": 7,
+          "type": "album",
+          "uri": "spotify:album:0cgG1miZTUdU6P1OFhOGv6"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1LfqhJiCiHfVzrBOVaBXc1"
+            },
+            "href": "https://api.spotify.com/v1/artists/1LfqhJiCiHfVzrBOVaBXc1",
+            "id": "1LfqhJiCiHfVzrBOVaBXc1",
+            "name": "Demuja",
+            "type": "artist",
+            "uri": "spotify:artist:1LfqhJiCiHfVzrBOVaBXc1"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 358296,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200346"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0x2Ait3NG1ZFUh8VLbPUKg"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0x2Ait3NG1ZFUh8VLbPUKg",
+        "id": "0x2Ait3NG1ZFUh8VLbPUKg",
+        "is_local": false,
+        "is_playable": true,
+        "name": "J on G",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/e6f412d2b20571c30994a311c31d9fc1e9b668e0?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 5,
+        "type": "track",
+        "uri": "spotify:track:0x2Ait3NG1ZFUh8VLbPUKg"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/5PfkEKFVRu0eK15YC0BaCH"
+          },
+          "href": "https://api.spotify.com/v1/albums/5PfkEKFVRu0eK15YC0BaCH",
+          "id": "5PfkEKFVRu0eK15YC0BaCH",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2735360e2ba90015abeff5e34c6",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e025360e2ba90015abeff5e34c6",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048515360e2ba90015abeff5e34c6",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 5",
+          "release_date": "2017-07-28",
+          "release_date_precision": "day",
+          "total_tracks": 10,
+          "type": "album",
+          "uri": "spotify:album:5PfkEKFVRu0eK15YC0BaCH"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6AwGe2F49hD3ANXvmOwqQB"
+            },
+            "href": "https://api.spotify.com/v1/artists/6AwGe2F49hD3ANXvmOwqQB",
+            "id": "6AwGe2F49hD3ANXvmOwqQB",
+            "name": "Black Loops",
+            "type": "artist",
+            "uri": "spotify:artist:6AwGe2F49hD3ANXvmOwqQB"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 410505,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200277"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2Pq8XF3PBJIvYGPbzTFaxy"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2Pq8XF3PBJIvYGPbzTFaxy",
+        "id": "2Pq8XF3PBJIvYGPbzTFaxy",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Cassette 7",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/5eb2a964ce9278768e2f3cca39d3e96e59287657?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 4,
+        "type": "track",
+        "uri": "spotify:track:2Pq8XF3PBJIvYGPbzTFaxy"
+      },
+      {
+        "album": {
+          "album_type": "compilation",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/0cgG1miZTUdU6P1OFhOGv6"
+          },
+          "href": "https://api.spotify.com/v1/albums/0cgG1miZTUdU6P1OFhOGv6",
+          "id": "0cgG1miZTUdU6P1OFhOGv6",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27311580f92dd327e949e918305",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0211580f92dd327e949e918305",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485111580f92dd327e949e918305",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 6",
+          "release_date": "2018-07-06",
+          "release_date_precision": "day",
+          "total_tracks": 7,
+          "type": "album",
+          "uri": "spotify:album:0cgG1miZTUdU6P1OFhOGv6"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2TIVoSbNoE1A9ihHlRRfpP"
+            },
+            "href": "https://api.spotify.com/v1/artists/2TIVoSbNoE1A9ihHlRRfpP",
+            "id": "2TIVoSbNoE1A9ihHlRRfpP",
+            "name": "Jad & The",
+            "type": "artist",
+            "uri": "spotify:artist:2TIVoSbNoE1A9ihHlRRfpP"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 403031,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200341"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/3AhexkrItz37ifS8nutIEL"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3AhexkrItz37ifS8nutIEL",
+        "id": "3AhexkrItz37ifS8nutIEL",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Strings That Never Win",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/cc9028dc88657c8cfde7c0d1aed79999704ea878?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 2,
+        "type": "track",
+        "uri": "spotify:track:3AhexkrItz37ifS8nutIEL"
+      },
+      {
+        "album": {
+          "album_type": "compilation",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/0cgG1miZTUdU6P1OFhOGv6"
+          },
+          "href": "https://api.spotify.com/v1/albums/0cgG1miZTUdU6P1OFhOGv6",
+          "id": "0cgG1miZTUdU6P1OFhOGv6",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27311580f92dd327e949e918305",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0211580f92dd327e949e918305",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485111580f92dd327e949e918305",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 6",
+          "release_date": "2018-07-06",
+          "release_date_precision": "day",
+          "total_tracks": 7,
+          "type": "album",
+          "uri": "spotify:album:0cgG1miZTUdU6P1OFhOGv6"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3sySIHNL0hqR7eOlm3LNTH"
+            },
+            "href": "https://api.spotify.com/v1/artists/3sySIHNL0hqR7eOlm3LNTH",
+            "id": "3sySIHNL0hqR7eOlm3LNTH",
+            "name": "Kapote",
+            "type": "artist",
+            "uri": "spotify:artist:3sySIHNL0hqR7eOlm3LNTH"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0wZeO8kuM4dYiraesOH282"
+            },
+            "href": "https://api.spotify.com/v1/artists/0wZeO8kuM4dYiraesOH282",
+            "id": "0wZeO8kuM4dYiraesOH282",
+            "name": "FYI Chris",
+            "type": "artist",
+            "uri": "spotify:artist:0wZeO8kuM4dYiraesOH282"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 360633,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200348"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/76leweSR5MoWC6JIsRzYwW"
+        },
+        "href": "https://api.spotify.com/v1/tracks/76leweSR5MoWC6JIsRzYwW",
+        "id": "76leweSR5MoWC6JIsRzYwW",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Salvation - FYI Chris Remix",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/66bd507a710265056f397989d36c66424ce680c7?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 7,
+        "type": "track",
+        "uri": "spotify:track:76leweSR5MoWC6JIsRzYwW"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/473kFLqJgEcfV4RXvIqwW6"
+          },
+          "href": "https://api.spotify.com/v1/albums/473kFLqJgEcfV4RXvIqwW6",
+          "id": "473kFLqJgEcfV4RXvIqwW6",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c1c40a28b90e82496c573784",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c1c40a28b90e82496c573784",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c1c40a28b90e82496c573784",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 4",
+          "release_date": "2016-08-12",
+          "release_date_precision": "day",
+          "total_tracks": 10,
+          "type": "album",
+          "uri": "spotify:album:473kFLqJgEcfV4RXvIqwW6"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3sySIHNL0hqR7eOlm3LNTH"
+            },
+            "href": "https://api.spotify.com/v1/artists/3sySIHNL0hqR7eOlm3LNTH",
+            "id": "3sySIHNL0hqR7eOlm3LNTH",
+            "name": "Kapote",
+            "type": "artist",
+            "uri": "spotify:artist:3sySIHNL0hqR7eOlm3LNTH"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4Hl6TEQAFgH0XrZq4f8okX"
+            },
+            "href": "https://api.spotify.com/v1/artists/4Hl6TEQAFgH0XrZq4f8okX",
+            "id": "4Hl6TEQAFgH0XrZq4f8okX",
+            "name": "Session Victim",
+            "type": "artist",
+            "uri": "spotify:artist:4Hl6TEQAFgH0XrZq4f8okX"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 416424,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200210"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4cHOXRU9UkwTNF7y4WuJzz"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4cHOXRU9UkwTNF7y4WuJzz",
+        "id": "4cHOXRU9UkwTNF7y4WuJzz",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Fuck Music - Session Victim Remix",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/af95e8030dc2393ab31b9d9110160d0623bd1225?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 2,
+        "type": "track",
+        "uri": "spotify:track:4cHOXRU9UkwTNF7y4WuJzz"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/3uiHnHyC3MRX2MpGq8hwKF"
+          },
+          "href": "https://api.spotify.com/v1/albums/3uiHnHyC3MRX2MpGq8hwKF",
+          "id": "3uiHnHyC3MRX2MpGq8hwKF",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273185763b87e1d81a47ee96c13",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02185763b87e1d81a47ee96c13",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851185763b87e1d81a47ee96c13",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 7",
+          "release_date": "2019-08-23",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:3uiHnHyC3MRX2MpGq8hwKF"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0IySrk0S2gbAoxaYyPHEZD"
+            },
+            "href": "https://api.spotify.com/v1/artists/0IySrk0S2gbAoxaYyPHEZD",
+            "id": "0IySrk0S2gbAoxaYyPHEZD",
+            "name": "Mangabey",
+            "type": "artist",
+            "uri": "spotify:artist:0IySrk0S2gbAoxaYyPHEZD"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 313516,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200442"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0jDoi2dN19ffZNrMst3FR3"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0jDoi2dN19ffZNrMst3FR3",
+        "id": "0jDoi2dN19ffZNrMst3FR3",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Just Luv Machine",
+        "popularity": 0,
+        "preview_url": "https://p.scdn.co/mp3-preview/fd9f5965cc3d1cad3eb4a1153cfad0c07a2bc360?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 8,
+        "type": "track",
+        "uri": "spotify:track:0jDoi2dN19ffZNrMst3FR3"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+              },
+              "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+              "id": "0LyfQWJT6nXafLPZqxe9Of",
+              "name": "Various Artists",
+              "type": "artist",
+              "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/3uiHnHyC3MRX2MpGq8hwKF"
+          },
+          "href": "https://api.spotify.com/v1/albums/3uiHnHyC3MRX2MpGq8hwKF",
+          "id": "3uiHnHyC3MRX2MpGq8hwKF",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273185763b87e1d81a47ee96c13",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02185763b87e1d81a47ee96c13",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851185763b87e1d81a47ee96c13",
+              "width": 64
+            }
+          ],
+          "name": "Toy Tonics Top Tracks Vol. 7",
+          "release_date": "2019-08-23",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:3uiHnHyC3MRX2MpGq8hwKF"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3sySIHNL0hqR7eOlm3LNTH"
+            },
+            "href": "https://api.spotify.com/v1/artists/3sySIHNL0hqR7eOlm3LNTH",
+            "id": "3sySIHNL0hqR7eOlm3LNTH",
+            "name": "Kapote",
+            "type": "artist",
+            "uri": "spotify:artist:3sySIHNL0hqR7eOlm3LNTH"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 232000,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEBY41200437"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0mq7AHBhP9GzImKOQUlCKL"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0mq7AHBhP9GzImKOQUlCKL",
+        "id": "0mq7AHBhP9GzImKOQUlCKL",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Delirio Italiano",
+        "popularity": 1,
+        "preview_url": "https://p.scdn.co/mp3-preview/5f9411e1ec68649cc62f7f4f8bce40f27a0b07c0?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 3,
+        "type": "track",
+        "uri": "spotify:track:0mq7AHBhP9GzImKOQUlCKL"
+      }
+    ],
+    "limit": 20,
+    "next": "https://api.spotify.com/v1/search?query=label%3AToy+Tonics&type=track&market=DE&offset=20&limit=20",
+    "offset": 0,
+    "previous": null,
+    "total": 52
+  }
+}
