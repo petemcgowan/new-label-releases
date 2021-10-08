@@ -1,0 +1,13 @@
+<section id="recordCrates" class="container">
+    <h1>All Gigs</h1>
+
+    {{#each recordCrates}}
+      <div class="recordCrates">
+      <h3>{{artists}}</h3>
+      <p>{{releaseName}}</p>
+    </div>
+    {{else}}
+      <p>No record crates available</p>
+    {{/each}}
+
+  </section>
