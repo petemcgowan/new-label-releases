@@ -1,0 +1,685 @@
+{
+  "pagination": {
+    "page": 1,
+    "pages": 1,
+    "per_page": 50,
+    "items": 23,
+    "urls": {}
+  },
+  "results": [
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["File", "MP3", "WAV", "EP"],
+      "label": ["Toy Tonics"],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["Disco", "House"],
+      "id": 14876848,
+      "barcode": [],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Roman-Truth-Edit-Series/release/14876848",
+      "catno": "none",
+      "title": "Roman Truth - Edit Series",
+      "thumb": "https://img.discogs.com/1o9F_pe64M259U0IwvCG3-W2ezs=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14876848-1583285209-4541.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/ApZQvwhoU_5dTaAQGR21cNJ6G3o=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-14876848-1583285209-4541.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/14876848",
+      "community": { "want": 12, "have": 1 },
+      "format_quantity": 0,
+      "formats": [
+        { "name": "File", "qty": "1", "descriptions": ["MP3", "WAV", "EP"] }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["File", "MP3", "EP"],
+      "label": ["Toy Tonics"],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["Disco", "House", "Nu-Disco"],
+      "id": 16722033,
+      "barcode": [],
+      "master_id": 1899759,
+      "master_url": "https://api.discogs.com/masters/1899759",
+      "uri": "/COEO-Piano-Workout/release/16722033",
+      "catno": "TOYT 114",
+      "title": "COEO - Piano Workout",
+      "thumb": "https://img.discogs.com/bvREOYdZGz4bt4YyzdyWXjpkwDU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-16722033-1609440156-9848.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/GGvc9sWagmWVjc0p_yKFKu-ike8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-16722033-1609440156-9848.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/16722033",
+      "community": { "want": 8, "have": 7 },
+      "format_quantity": 0,
+      "formats": [
+        {
+          "name": "File",
+          "qty": "4",
+          "text": "320 kbps",
+          "descriptions": ["MP3", "EP"]
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2021",
+      "format": ["Vinyl", "12\"", "EP"],
+      "label": ["Toy Tonics"],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["House", "Deep House", "Breaks"],
+      "id": 19111921,
+      "barcode": [],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Fenyan-x-Kosmo-Kint-Da-Real-EP-wJerome-Sydenham-Rmx-12/release/19111921",
+      "catno": "TOYT119",
+      "title": "Fenyan x Kosmo Kint - Da Real EP (w/Jerome Sydenham Rmx) 12\"",
+      "thumb": "https://img.discogs.com/xKJlauIdRJ5hKxqjGuV92f5oCyo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-19111921-1623493295-5025.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/0cWfMXFYYAse4Scve2b1Ar-JeOE=/fit-in/529x526/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-19111921-1623493295-5025.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/19111921",
+      "community": { "want": 4, "have": 7 },
+      "format_quantity": 1,
+      "formats": [
+        { "name": "Vinyl", "qty": "1", "descriptions": ["12\"", "EP"] }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["File", "MP3"],
+      "label": ["Toy Tonics"],
+      "type": "release",
+      "genre": ["Funk / Soul"],
+      "style": ["Funk", "Disco"],
+      "id": 16737006,
+      "barcode": [],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Delfonic-Edit-Series/release/16737006",
+      "catno": "none",
+      "title": "Delfonic - Edit Series",
+      "thumb": "https://img.discogs.com/DljC6WHZPRws6nvxFOKe5WgGKS0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-16737006-1609534267-6244.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/mrpKT1LwbjNHxAA0HSVZNhuYsQE=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-16737006-1609534267-6244.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/16737006",
+      "community": { "want": 1, "have": 0 },
+      "format_quantity": 0,
+      "formats": [
+        { "name": "File", "qty": "4", "text": "320", "descriptions": ["MP3"] }
+      ]
+    },
+    {
+      "country": "UK",
+      "year": "2021",
+      "format": ["Vinyl", "12\""],
+      "label": ["Toy Tonics"],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["Disco", "Nu-Disco"],
+      "id": 19078672,
+      "barcode": [],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Athlete-Whippet-Vesta/release/19078672",
+      "catno": "TOYT118",
+      "title": "Athlete Whippet - Vesta",
+      "thumb": "https://img.discogs.com/0xh5NLvJkMmEEuVGWphjSLGt2lc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-19078672-1623256567-7807.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/dLYMlyFiGdMnnEhqn-dcBhlROkE=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-19078672-1623256567-7807.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/19078672",
+      "community": { "want": 6, "have": 11 },
+      "format_quantity": 1,
+      "formats": [{ "name": "Vinyl", "qty": "1", "descriptions": ["12\""] }]
+    },
+    {
+      "country": "UK, Europe & US",
+      "year": "2020",
+      "format": ["File", "MP3", "Album", "Stereo"],
+      "label": ["Toy Tonics"],
+      "type": "release",
+      "genre": ["Electronic", "Rock"],
+      "style": ["Disco", "Indie Rock"],
+      "id": 15322689,
+      "barcode": [],
+      "master_id": 1743205,
+      "master_url": "https://api.discogs.com/masters/1743205",
+      "uri": "/Phenomenal-Handclap-Band-PHB/release/15322689",
+      "catno": "TOYT110",
+      "title": "Phenomenal Handclap Band* - PHB",
+      "thumb": "https://img.discogs.com/XgPvlcbdo3DuBCSIZwuEAVysk4s=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-15322689-1589723466-5379.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/N3B3p-jjfx0kfSYlj0rEJWL3R7k=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-15322689-1589723466-5379.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/15322689",
+      "community": { "want": 3, "have": 7 },
+      "format_quantity": 0,
+      "formats": [
+        {
+          "name": "File",
+          "qty": "10",
+          "text": "320 kbps",
+          "descriptions": ["MP3", "Album", "Stereo"]
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2021",
+      "format": ["Vinyl", "12\"", "33 ⅓ RPM", "EP"],
+      "label": ["Toy Tonics"],
+      "type": "release",
+      "genre": ["Electronic", "Jazz"],
+      "style": ["House", "Future Jazz"],
+      "id": 17448808,
+      "barcode": ["LC27882"],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Cody-Currie-Moves-EP/release/17448808",
+      "catno": "TOYT113",
+      "title": "Cody Currie - Moves EP",
+      "thumb": "https://img.discogs.com/RSY3Eygr8zpcr368k_iiFtCOHGw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-17448808-1613641387-2072.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/56xxdRDLD0ogFSaQBu-fMHu7-gQ=/fit-in/557x550/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-17448808-1613641387-2072.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/17448808",
+      "community": { "want": 80, "have": 123 },
+      "format_quantity": 1,
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": ["12\"", "33 ⅓ RPM", "EP"]
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["Vinyl", "12\"", "33 ⅓ RPM", "EP", "Stereo"],
+      "label": ["Toy Tonics"],
+      "type": "release",
+      "genre": ["Electronic", "Funk / Soul"],
+      "style": ["Deep House", "Nu-Disco", "Italo-Disco"],
+      "id": 15182467,
+      "barcode": [],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Magou-Dreams/release/15182467",
+      "catno": "TOYT107",
+      "title": "Magou - Dreams",
+      "thumb": "https://img.discogs.com/ejmW2QzcMoiDksmw0lj_JCd2GPk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-15182467-1605479447-8501.png.jpg",
+      "cover_image": "https://img.discogs.com/tZDFXEkwxX6LfASY7AkXlMPKi38=/fit-in/505x504/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-15182467-1605479447-8501.png.jpg",
+      "resource_url": "https://api.discogs.com/releases/15182467",
+      "community": { "want": 109, "have": 140 },
+      "format_quantity": 1,
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": ["12\"", "33 ⅓ RPM", "EP", "Stereo"]
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["File", "MP3"],
+      "label": ["Toy Tonics"],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["House", "Nu-Disco"],
+      "id": 16680801,
+      "barcode": [],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Kapote-E-d-i-t-S-e-r-i-e-s-Euro-Disco-Reworks/release/16680801",
+      "catno": "none",
+      "title": "Kapote - E-d-i-t S-e-r-i-e-s (Euro Disco Reworks)",
+      "thumb": "https://img.discogs.com/2Z8_BXf5ltPTkOKN_cGIdDMCErE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-16680801-1609232092-5747.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/REVsiMK6M6Gw7pDlSjfgdzhb44c=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-16680801-1609232092-5747.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/16680801",
+      "community": { "want": 5, "have": 2 },
+      "format_quantity": 0,
+      "formats": [
+        {
+          "name": "File",
+          "qty": "5",
+          "text": "320 kbps",
+          "descriptions": ["MP3"]
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["Vinyl", "12\""],
+      "label": ["Toy Tonics"],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["House", "Deep House", "Nu-Disco"],
+      "id": 14729339,
+      "barcode": [],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Mangabey-Kosmo-Kint-Time-No-More-Get-Lost/release/14729339",
+      "catno": "TOYT102",
+      "title": "Mangabey, Kosmo Kint - Time No More / Get Lost",
+      "thumb": "https://img.discogs.com/YDyNrVKGAPYZkXd8T_KDh-cjRCM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14729339-1580463098-5793.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/JAab4WognQb07ETt9Y3Tb-tuVYE=/fit-in/600x607/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-14729339-1580463098-5793.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/14729339",
+      "community": { "want": 36, "have": 51 },
+      "format_quantity": 1,
+      "formats": [{ "name": "Vinyl", "qty": "1", "descriptions": ["12\""] }]
+    },
+    {
+      "country": "UK",
+      "year": "2021",
+      "format": ["Vinyl", "12\"", "45 RPM"],
+      "label": ["Toy Tonics"],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["Disco", "Deep House"],
+      "id": 17883898,
+      "barcode": [],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Joel-Holmes-Osmosis/release/17883898",
+      "catno": "TOYT117",
+      "title": "Joel Holmes (3) - Osmosis",
+      "thumb": "https://img.discogs.com/X6456f4kfHMEJzhwMSUyw7_J5M0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-17883898-1615991137-9526.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/5BAfsYIVsqn0brYqtRhU4gq2y8Y=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-17883898-1615991137-9526.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/17883898",
+      "community": { "want": 26, "have": 87 },
+      "format_quantity": 1,
+      "formats": [
+        { "name": "Vinyl", "qty": "1", "descriptions": ["12\"", "45 RPM"] }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["Vinyl", "12\"", "33 ⅓ RPM", "EP"],
+      "label": ["Toy Tonics", "Wordandsound"],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["Deep House", "House"],
+      "id": 14851451,
+      "barcode": ["LC 27882", "GEMA"],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Felipe-Gordon-Wait-On-Me-EP/release/14851451",
+      "catno": "TOYT105",
+      "title": "Felipe Gordon - Wait On Me EP",
+      "thumb": "https://img.discogs.com/37mJaySqafYxc5y94ww37rUnO3k=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14851451-1583353068-7361.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/GqSBIfizH0W44llTcO6rXlbGRKA=/fit-in/600x602/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-14851451-1583353068-7361.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/14851451",
+      "community": { "want": 108, "have": 172 },
+      "format_quantity": 1,
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": ["12\"", "33 ⅓ RPM", "EP"]
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["Vinyl", "12\"", "33 ⅓ RPM", "EP"],
+      "label": ["Toy Tonics", "Wordandsound"],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["Deep House"],
+      "id": 14964815,
+      "barcode": ["LC 27882", "GEMA"],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Cody-Currie-Joel-Holmes-Metropolis-/release/14964815",
+      "catno": "TOYT106",
+      "title": "Cody Currie & Joel Holmes (3) - Metropolis ",
+      "thumb": "https://img.discogs.com/1eqon1JJhRBolyiE3Q-xetgmtDY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14964815-1584833126-3379.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/6vf6ZNv5JM805IQ84tXvBEoPcbs=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-14964815-1584833126-3379.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/14964815",
+      "community": { "want": 70, "have": 119 },
+      "format_quantity": 1,
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": ["12\"", "33 ⅓ RPM", "EP"]
+        }
+      ]
+    },
+    {
+      "country": "Unknown",
+      "year": "2021",
+      "format": ["File", "MP3", "Compilation"],
+      "label": ["Toy Tonics", "Mushroom House"],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["House", "Nu-Disco"],
+      "id": 18570535,
+      "barcode": [],
+      "master_id": 2112724,
+      "master_url": "https://api.discogs.com/masters/2112724",
+      "uri": "/Various-Kapote-Pres-Mushroom-House-Vol-2/release/18570535",
+      "catno": "none",
+      "title": "Various - Kapote Pres Mushroom House Vol 2",
+      "thumb": "https://img.discogs.com/VK7hu3kLntB7sCBN52tnj-rO7PM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-18570535-1620038858-5586.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/74C8EUDnN_u1lAn7wwSr-rxTR74=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-18570535-1620038858-5586.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/18570535",
+      "community": { "want": 1, "have": 3 },
+      "format_quantity": 0,
+      "formats": [
+        {
+          "name": "File",
+          "qty": "11",
+          "text": "320 kbps",
+          "descriptions": ["MP3", "Compilation"]
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["Vinyl", "12\"", "33 ⅓ RPM", "EP", "Stereo"],
+      "label": ["Toy Tonics", "Schnittstelle", "Wordandsound"],
+      "type": "release",
+      "genre": ["Electronic", "Rock"],
+      "style": ["Nu-Disco", "Disco", "House", "Deep House"],
+      "id": 15894540,
+      "barcode": [
+        "880655511119",
+        "LC 27882",
+        "GEMA",
+        "BK14633-01 A1 TOYT 111 A tph at schnittstelle",
+        "BK14633-01 B1 TOYT 111 B tph at schnittstelle"
+      ],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Phenomenal-Handclap-Band-PHB-Remix-EP/release/15894540",
+      "catno": "TOYT111",
+      "title": "Phenomenal Handclap Band* - PHB Remix EP",
+      "thumb": "https://img.discogs.com/5-QW7u1oJBxuRE6jVqul_Xj00UU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-15894540-1603476737-6188.png.jpg",
+      "cover_image": "https://img.discogs.com/MUmsSoHxrp-PDSquACBPkeZtEbc=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-15894540-1603476737-6188.png.jpg",
+      "resource_url": "https://api.discogs.com/releases/15894540",
+      "community": { "want": 70, "have": 117 },
+      "format_quantity": 1,
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": ["12\"", "33 ⅓ RPM", "EP", "Stereo"]
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["Vinyl", "12\"", "Compilation"],
+      "label": ["Toy Tonics", "Mushroom House"],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["House"],
+      "id": 16491555,
+      "barcode": [],
+      "master_id": 0,
+      "master_url": null,
+      "uri": "/Various-Kapote-Pres-Mushroom-House-Vol-1/release/16491555",
+      "catno": "TOYT115",
+      "title": "Various - Kapote Pres Mushroom House Vol 1",
+      "thumb": "https://img.discogs.com/XiS4vGCdUjXBdcNgnO5hJmZNWSo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-16491555-1608066774-2111.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/_QsV1GCkEXKpeEzzoXk1Vz1t6A8=/fit-in/240x240/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-16491555-1608066774-2111.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/16491555",
+      "community": { "want": 39, "have": 97 },
+      "format_quantity": 2,
+      "formats": [
+        { "name": "Vinyl", "qty": "2", "descriptions": ["12\"", "Compilation"] }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["Vinyl", "LP", "Album", "Test Pressing", "Stereo"],
+      "label": ["Toy Tonics", "Wordandsound", "Gomma", "Kobalt"],
+      "type": "release",
+      "genre": ["Electronic", "Funk / Soul"],
+      "style": ["Disco", "Funk"],
+      "id": 16554786,
+      "barcode": ["tph/andreas at schnittstelle"],
+      "master_id": 1743205,
+      "master_url": "https://api.discogs.com/masters/1743205",
+      "uri": "/Phenomenal-Handclap-Band-PHB/release/16554786",
+      "catno": "TOYT110",
+      "title": "Phenomenal Handclap Band* - PHB",
+      "thumb": "",
+      "cover_image": "https://img.discogs.com/b49006bd27d808c4132fb100d03aeafbf1f0b719/images/spacer.gif",
+      "resource_url": "https://api.discogs.com/releases/16554786",
+      "community": { "want": 1, "have": 6 },
+      "format_quantity": 1,
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": ["LP", "Album", "Test Pressing", "Stereo"]
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["Vinyl", "LP", "Album", "Stereo"],
+      "label": [
+        "Toy Tonics",
+        "Wordandsound",
+        "Gomma",
+        "Kobalt",
+        "Schnittstelle"
+      ],
+      "type": "release",
+      "genre": ["Electronic", "Funk / Soul"],
+      "style": ["Disco", "Funk"],
+      "id": 15355769,
+      "barcode": [
+        "LC 27882",
+        "GEMA",
+        "|⋀ TOYT 110 A tph at schnittstelle",
+        "TOYT 110 A |⋀ tph at schnittstelle"
+      ],
+      "master_id": 1743205,
+      "master_url": "https://api.discogs.com/masters/1743205",
+      "uri": "/Phenomenal-Handclap-Band-PHB/release/15355769",
+      "catno": "TOYT110",
+      "title": "Phenomenal Handclap Band* - PHB",
+      "thumb": "https://img.discogs.com/XynXKrBcjVMRaLC9GQp-54c5zPk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-15355769-1591483537-3695.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/r3RN1W46B15u1RaN2vcERBJ6Lbg=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-15355769-1591483537-3695.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/15355769",
+      "community": { "want": 44, "have": 71 },
+      "format_quantity": 1,
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": ["LP", "Album", "Stereo"]
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["Vinyl", "LP", "Album", "Stereo"],
+      "label": [
+        "Toy Tonics",
+        "Wordandsound",
+        "Gomma",
+        "Kobalt",
+        "Schnittstelle"
+      ],
+      "type": "master",
+      "genre": ["Electronic", "Funk / Soul"],
+      "style": ["Disco", "Funk"],
+      "id": 1743205,
+      "barcode": [
+        "LC 27882",
+        "GEMA",
+        "|⋀ TOYT 110 A tph at schnittstelle",
+        "TOYT 110 A |⋀ tph at schnittstelle"
+      ],
+      "master_id": 1743205,
+      "master_url": "https://api.discogs.com/masters/1743205",
+      "uri": "/Phenomenal-Handclap-Band-PHB/master/1743205",
+      "catno": "TOYT110",
+      "title": "Phenomenal Handclap Band* - PHB",
+      "thumb": "https://img.discogs.com/XynXKrBcjVMRaLC9GQp-54c5zPk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-15355769-1591483537-3695.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/r3RN1W46B15u1RaN2vcERBJ6Lbg=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-15355769-1591483537-3695.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/masters/1743205",
+      "community": { "want": 48, "have": 84 }
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["Vinyl", "12\"", "EP", "Stereo"],
+      "label": [
+        "Toy Tonics",
+        "Wordandsound",
+        "Schnittstelle",
+        "Optimal Media GmbH"
+      ],
+      "type": "master",
+      "genre": ["Electronic"],
+      "style": ["Disco", "House", "Nu-Disco", "Breakbeat"],
+      "id": 1899759,
+      "barcode": [
+        "0880655511416",
+        "TOYT114 A TPH/andreas at schnittstelle BK20423-01 A1",
+        "TOYT114 B andreas at schnittstelle BK20423-01 B1",
+        "LC 27882"
+      ],
+      "master_id": 1899759,
+      "master_url": "https://api.discogs.com/masters/1899759",
+      "uri": "/COEO-Piano-Workout/master/1899759",
+      "catno": "TOYT114",
+      "title": "COEO - Piano Workout",
+      "thumb": "https://img.discogs.com/8l3MR3KbyY_faOrPd34uA30Mfy0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-16081637-1613261806-8378.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/UI-GCR0ckRX2uF60zeZYRz-43JQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-16081637-1613261806-8378.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/masters/1899759",
+      "community": { "want": 249, "have": 345 }
+    },
+    {
+      "country": "Germany",
+      "year": "2020",
+      "format": ["Vinyl", "12\"", "EP", "Stereo"],
+      "label": [
+        "Toy Tonics",
+        "Wordandsound",
+        "Schnittstelle",
+        "Optimal Media GmbH"
+      ],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["Disco", "House", "Nu-Disco", "Breakbeat"],
+      "id": 16081637,
+      "barcode": [
+        "0880655511416",
+        "TOYT114 A TPH/andreas at schnittstelle BK20423-01 A1",
+        "TOYT114 B andreas at schnittstelle BK20423-01 B1",
+        "LC 27882"
+      ],
+      "master_id": 1899759,
+      "master_url": "https://api.discogs.com/masters/1899759",
+      "uri": "/COEO-Piano-Workout/release/16081637",
+      "catno": "TOYT114",
+      "title": "COEO - Piano Workout",
+      "thumb": "https://img.discogs.com/8l3MR3KbyY_faOrPd34uA30Mfy0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-16081637-1613261806-8378.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/UI-GCR0ckRX2uF60zeZYRz-43JQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-16081637-1613261806-8378.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/16081637",
+      "community": { "want": 241, "have": 338 },
+      "format_quantity": 1,
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": ["12\"", "EP", "Stereo"]
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2021",
+      "format": ["Vinyl", "12\"", "33 ⅓ RPM", "Compilation"],
+      "label": [
+        "Toy Tonics",
+        "Mushroom House",
+        "Schnittstelle",
+        "Optimal Media GmbH",
+        "Now-Again Records, LLC",
+        "Sacred Rhythm Music",
+        "Cosmic Arts",
+        "Bolla Music"
+      ],
+      "type": "release",
+      "genre": ["Electronic"],
+      "style": ["House", "Nu-Disco"],
+      "id": 18592852,
+      "barcode": [
+        "LC 27882",
+        "GEMA",
+        "ASCAP",
+        "BL33298-01 A1 TOYT 116 A Andreas at Schnittstelle ",
+        "BL33298-01 B1 TOYT 116 B Andreas at Schnittstelle",
+        "BL33298-02 C1 TOYT 116 C Andreas at Schnittstelle",
+        "BL33298-02 D1 TOYT 116 D Andreas at Schnittstelle"
+      ],
+      "master_id": 2112724,
+      "master_url": "https://api.discogs.com/masters/2112724",
+      "uri": "/Various-Kapote-Pres-Mushroom-House-Vol-2/release/18592852",
+      "catno": "TOYT116",
+      "title": "Various - Kapote Pres. Mushroom House Vol 2",
+      "thumb": "https://img.discogs.com/sbLbSarUCAyQElHgRymus-dDyW0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-18592852-1620288288-7902.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/uFX12Fc9VOgApFtMfBnv8jhIlEY=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-18592852-1620288288-7902.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/releases/18592852",
+      "community": { "want": 18, "have": 50 },
+      "format_quantity": 2,
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": ["12\"", "33 ⅓ RPM", "Compilation"]
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "year": "2021",
+      "format": ["Vinyl", "12\"", "33 ⅓ RPM", "Compilation"],
+      "label": [
+        "Toy Tonics",
+        "Mushroom House",
+        "Schnittstelle",
+        "Optimal Media GmbH",
+        "Now-Again Records, LLC",
+        "Sacred Rhythm Music",
+        "Cosmic Arts",
+        "Bolla Music"
+      ],
+      "type": "master",
+      "genre": ["Electronic"],
+      "style": ["House", "Nu-Disco"],
+      "id": 2112724,
+      "barcode": [
+        "LC 27882",
+        "GEMA",
+        "ASCAP",
+        "BL33298-01 A1 TOYT 116 A Andreas at Schnittstelle ",
+        "BL33298-01 B1 TOYT 116 B Andreas at Schnittstelle",
+        "BL33298-02 C1 TOYT 116 C Andreas at Schnittstelle",
+        "BL33298-02 D1 TOYT 116 D Andreas at Schnittstelle"
+      ],
+      "master_id": 2112724,
+      "master_url": "https://api.discogs.com/masters/2112724",
+      "uri": "/Various-Kapote-Pres-Mushroom-House-Vol-2/master/2112724",
+      "catno": "TOYT116",
+      "title": "Various - Kapote Pres. Mushroom House Vol 2",
+      "thumb": "https://img.discogs.com/sbLbSarUCAyQElHgRymus-dDyW0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-18592852-1620288288-7902.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/uFX12Fc9VOgApFtMfBnv8jhIlEY=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-18592852-1620288288-7902.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/masters/2112724",
+      "community": { "want": 19, "have": 53 }
+    }
+  ]
+}
