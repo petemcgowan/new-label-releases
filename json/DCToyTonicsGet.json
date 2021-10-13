@@ -1,0 +1,48 @@
+{
+  "pagination": {
+    "page": 1,
+    "pages": 1,
+    "per_page": 50,
+    "items": 1,
+    "urls": {}
+  },
+  "results": [
+    {
+      "country": "Germany",
+      "year": "2021",
+      "format": ["Vinyl", "12\"", "33 ⅓ RPM", "Compilation"],
+      "label": [
+        "Toy Tonics",
+        "Mushroom House",
+        "Schnittstelle",
+        "Optimal Media GmbH",
+        "Now-Again Records, LLC",
+        "Sacred Rhythm Music",
+        "Cosmic Arts",
+        "Bolla Music"
+      ],
+      "type": "master",
+      "genre": ["Electronic"],
+      "style": ["House", "Nu-Disco"],
+      "id": 2112724,
+      "barcode": [
+        "LC 27882",
+        "GEMA",
+        "ASCAP",
+        "BL33298-01 A1 TOYT 116 A Andreas at Schnittstelle ",
+        "BL33298-01 B1 TOYT 116 B Andreas at Schnittstelle",
+        "BL33298-02 C1 TOYT 116 C Andreas at Schnittstelle",
+        "BL33298-02 D1 TOYT 116 D Andreas at Schnittstelle"
+      ],
+      "master_id": 2112724,
+      "master_url": "https://api.discogs.com/masters/2112724",
+      "uri": "/Various-Kapote-Pres-Mushroom-House-Vol-2/master/2112724",
+      "catno": "TOYT116",
+      "title": "Various - Kapote Pres. Mushroom House Vol 2",
+      "thumb": "https://img.discogs.com/sbLbSarUCAyQElHgRymus-dDyW0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-18592852-1620288288-7902.jpeg.jpg",
+      "cover_image": "https://img.discogs.com/uFX12Fc9VOgApFtMfBnv8jhIlEY=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-18592852-1620288288-7902.jpeg.jpg",
+      "resource_url": "https://api.discogs.com/masters/2112724",
+      "community": { "want": 19, "have": 53 }
+    }
+  ]
+}
