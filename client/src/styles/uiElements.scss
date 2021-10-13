@@ -1,0 +1,61 @@
+.release-list{
+  margin: 20px;
+}
+.release-list ul{
+  padding: 0;
+  list-style-type: none;
+}
+.release-list li{
+  background: #6d3d6d;
+  // background: hotpink;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.release-list li:hover{
+  opacity: 0.7;
+  background: #447522;
+}
+.release-list .artists{
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+}
+.release-list .releaseName{
+  font-size: 0.9em;
+  color: #ddd;
+}
+.crate-list{
+  margin: 20px;
+}
+.crate-list table{
+  padding: 0;
+  list-style-type: none;
+}
+.crate-list td{
+  background: #1f5724;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.crate-list td:hover{
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+.crate-list .artists{
+  font-size: 0.9em;
+  color: #ddd;
+}
+.crate-list .releaseName{
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.empty{
+  margin: 20px;
+  text-align: center;
+}
