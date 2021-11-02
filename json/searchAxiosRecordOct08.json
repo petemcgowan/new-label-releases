@@ -1,0 +1,96 @@
+{
+  "data": {
+    "success": true,
+    "count": 6,
+    "data": [
+      {
+        "id": 42,
+        "emailAddress": "Oct04@gmail.com",
+        "artists": "Black Loops",
+        "releaseName": "Remind Me",
+        "trackName": "Remind Me",
+        "createdAt": "2021-10-04T18:53:41.894Z",
+        "updatedAt": "2021-10-04T18:53:41.894Z"
+      },
+      {
+        "id": 43,
+        "emailAddress": "Oct04@gmail.com",
+        "artists": "Black Loops",
+        "releaseName": "JAH Love",
+        "trackName": "Your Mind",
+        "createdAt": "2021-10-04T18:53:43.310Z",
+        "updatedAt": "2021-10-04T18:53:43.310Z"
+      },
+      {
+        "id": 45,
+        "emailAddress": "Oct04@gmail.com",
+        "artists": "Black Loops",
+        "releaseName": "Remind Me",
+        "trackName": "Good Things",
+        "createdAt": "2021-10-05T17:25:14.090Z",
+        "updatedAt": "2021-10-05T17:25:14.090Z"
+      },
+      {
+        "id": 46,
+        "emailAddress": "Oct04@gmail.com",
+        "artists": "Black Loops",
+        "releaseName": "JAH Love",
+        "trackName": "JAH Love",
+        "createdAt": "2021-10-05T17:27:28.647Z",
+        "updatedAt": "2021-10-05T17:27:28.647Z"
+      },
+      {
+        "id": 47,
+        "emailAddress": "Oct04@gmail.com",
+        "artists": "Black Loops",
+        "releaseName": "JAH Love",
+        "trackName": "NYC Dirty Talks",
+        "createdAt": "2021-10-05T17:30:17.491Z",
+        "updatedAt": "2021-10-05T17:30:17.491Z"
+      },
+      {
+        "id": 48,
+        "emailAddress": "Oct04@gmail.com",
+        "artists": "Black Loops",
+        "releaseName": "JAH Love",
+        "trackName": "Silly Acid",
+        "createdAt": "2021-10-05T17:36:57.293Z",
+        "updatedAt": "2021-10-05T17:36:57.293Z"
+      }
+    ]
+  },
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "connection": "close",
+    "content-encoding": "gzip",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Fri, 08 Oct 2021 15:32:51 GMT",
+    "etag": "W/\"4b9-nQ4jE/G9z9gZsRjAmXooPmt6vY4\"",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding",
+    "x-powered-by": "Express"
+  },
+  "config": {
+    "transitional": {
+      "silentJSONParsing": true,
+      "forcedJSONParsing": true,
+      "clarifyTimeoutError": false
+    },
+    "transformRequest": [null],
+    "transformResponse": [null],
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1,
+    "maxBodyLength": -1,
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/json"
+    },
+    "method": "post",
+    "url": "/recordCrates/search",
+    "data": "{\"emailAddress\":\"Oct04@gmail.com\"}"
+  },
+  "request": {}
+}
