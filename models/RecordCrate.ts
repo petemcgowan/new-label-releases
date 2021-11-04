@@ -1,5 +1,6 @@
 const Sequelize = require("sequelize");
-const db = require("../config/database");
+// const db = require("../config/database");
+import db from "../config/database";
 
 // define the database table name
 const RecordCrate = db.define("recordCrate", {

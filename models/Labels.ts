@@ -1,4 +1,5 @@
-const Sequelize = require("sequelize");
+// const Sequelize = require("sequelize");
+import Sequelize from "sequelize";
 const db = require("../config/database");
 
 // define the database table name

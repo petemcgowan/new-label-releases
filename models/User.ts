@@ -1,30 +1,32 @@
-
-const Sequelize = require('sequelize');
-const db = require('../config/database');
+const Sequelize = require("sequelize");
+import db from "../config/database";
+// const db = require('../config/database');
 
 // define the database table name
-const User = db.define('user', {
+const User = db.define("user", {
   name: {
     type: Sequelize.STRING,
-    allowNull: false
+    allowNull: false,
   },
   email: {
     type: Sequelize.STRING,
     allowNull: false,
-    unique: true
+    unique: true,
   },
   registerDate: {
     type: Sequelize.DATE,
     allowNull: false,
     defaultValue: Sequelize.NOW,
-    unique: true
+    unique: true,
   },
   password: {
-    type: Sequelize.STRING
-  }
+    type: Sequelize.STRING,
+  },
 });
 
 User.sync().then(() => {
-  console.log('User table created');
+  console.log("User table created");
 });
 module.exports = User;
+
+export default User;
