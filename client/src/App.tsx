@@ -5,13 +5,14 @@ import { Provider } from "react-redux";
 import reduxAuthStore from "./reduxAuthStore";
 import { loadUser } from "./actions/authActions";
 
-import { GlobalProvider } from "./contexts/GlobalState";
+import { GlobalProvider } from "./contexts/GlobalContext";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./styles/main.scss";
 
 function App() {
+
   useEffect(() => {
     console.log("Main App, useEffect called");
     const fetchUser = async () => {
