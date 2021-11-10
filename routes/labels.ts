@@ -1,4 +1,5 @@
-const express = require("express");
+// const express = require("express");
+import express from "express";
 const router = express.Router();
 const db = require("../config/database");
 const Labels = require("../models/Labels");
@@ -12,7 +13,7 @@ router.post("/", (req, res) => {
 
   console.log("Labels find all about to be called");
   Labels.findAll()
-    .then((labels) => {
+    .then((labels: string | any[]) => {
       console.log("labels:" + JSON.stringify(labels));
       return res.status(200).json({
         success: true,
@@ -20,7 +21,7 @@ router.post("/", (req, res) => {
         data: labels,
       });
     })
-    .catch((err) => {
+    .catch((err: any) => {
       console.log("err" + err);
       return res.status(500).json({
         success: false,
@@ -66,14 +67,16 @@ router.post("/add", (req, res, next) => {
       emailAddress,
       labelName,
     })
-      .then((labels) => {
-        console.log("Labels created");
-        return res.status(201).json({
-          success: true,
-          data: labels,
-        });
-      })
-      .catch((err) => {
+      .then(
+        (labels: { id: string; emailAddress: string; labelName: string }) => {
+          console.log("Labels created");
+          return res.status(201).json({
+            success: true,
+            data: labels,
+          });
+        }
+      )
+      .catch((err: any) => {
         console.log("err:" + err);
         return res.status(500).json({
           success: false,
@@ -93,7 +96,7 @@ router.post("/search", (req, res) => {
   Labels.findAll({
     where: { emailAddress: { [Op.like]: "%" + emailAddress + "%" } },
   })
-    .then((labels) => {
+    .then((labels: string | any[]) => {
       console.log("labels:" + JSON.stringify(labels));
       return res.status(200).json({
         success: true,
@@ -101,7 +104,7 @@ router.post("/search", (req, res) => {
         data: labels,
       });
     })
-    .catch((err) => {
+    .catch((err: any) => {
       console.log("err:" + err);
       return res.status(500).json({
         success: false,
