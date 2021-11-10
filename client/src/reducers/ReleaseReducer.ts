@@ -1,8 +1,26 @@
-import uuid from "uuid/v4";
+// import uuid from "uuid/v4";
+
+import {
+  // ADD_DUMMY_RELEASE,
+  ADD_RELEASES,
+  REMOVE_RELEASE,
+  SET_VOLUME,
+  SET_DURATION,
+  SET_CURRENT_TIME,
+  PLAY,
+  PAUSE,
+} from "../actions/types";
+
+import {
+  IAction,
+  IReleaseAction,
+  IRelease,
+  IReleaseTrack,
+} from "../types/interfaces";
 
 const DEFAULT_VOLUME = 0.65;
 
-export const initialState = {
+export const initialReleaseState = {
   currentSongId: "",
   currentTime: 0,
   duration: 0,
@@ -11,24 +29,36 @@ export const initialState = {
   releases: [],
 };
 
-export const ReleaseReducer = (state, action) => {
+export interface IInitialReleaseState {
+  currentSongId: string;
+  currentTime: number;
+  duration: number;
+  playing: boolean;
+  volume: number;
+  releases: IReleaseTrack[];
+}
+
+export const ReleaseReducer = (
+  state: IInitialReleaseState = initialReleaseState,
+  action: IReleaseAction
+) => {
   switch (action.type) {
-    case "ADD_DUMMY_RELEASE":
-      return [
-        ...state,
-        {
-          artists: action.release.artists,
-          href: "",
-          releaseName: action.release.releaseName,
-          trackName: "",
-          label: "",
-          durationMiSecs: "",
-          releaseDate: "",
-          albumType: "",
-          id: uuid(),
-        },
-      ];
-    case "ADD_RELEASES": {
+    // case ADD_DUMMY_RELEASE:
+    //   return [
+    //     ...state,
+    //     {
+    //       artists: action.release.artists,
+    //       href: "",
+    //       releaseName: action.release.releaseName,
+    //       trackName: "",
+    //       label: "",
+    //       durationMiSecs: "",
+    //       releaseDate: "",
+    //       albumType: "",
+    //       id: uuid(),
+    //     },
+    //   ];
+    case ADD_RELEASES: {
       // this is just to print out the release name:
       action.releases.map((release) => {
         console.log("release.releaseName:" + release.releaseName);
@@ -36,7 +66,7 @@ export const ReleaseReducer = (state, action) => {
       });
       return { ...state, releases: action.releases };
     }
-    case "REMOVE_RELEASE": {
+    case REMOVE_RELEASE: {
       const releasesCopy = Array.from(state.releases);
       console.log("releasesCopy:" + JSON.stringify(releasesCopy));
 
@@ -57,13 +87,13 @@ export const ReleaseReducer = (state, action) => {
       return { ...state, releases: state.releases };
       // return state.releases;
     }
-    case "SET_VOLUME":
+    case SET_VOLUME:
       return { ...state, volume: parseFloat(action.volume) };
-    case "SET_DURATION":
+    case SET_DURATION:
       return { ...state, duration: action.duration };
-    case "SET_CURRENT_TIME":
+    case SET_CURRENT_TIME:
       return { ...state, currentTime: action.time };
-    case "PLAY": {
+    case PLAY: {
       console.log("dispatch: Play");
       return {
         ...state,
@@ -71,7 +101,7 @@ export const ReleaseReducer = (state, action) => {
         currentSongId: action.songId || state.currentSongId,
       };
     }
-    case "PAUSE": {
+    case PAUSE: {
       console.log("dispatch: Pause");
       return { ...state, playing: false };
     }
