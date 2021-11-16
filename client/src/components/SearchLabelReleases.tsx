@@ -1,12 +1,14 @@
 import React, { useContext, useState } from "react";
-// import { ReleaseContext } from "../contexts/ReleaseContext";
 import "../styles/formElements.scss";
 import { getToken } from "../utils/spotifyHelpers";
 import { SpotifyCredentials } from "../utils/SpotifyCredentials";
 import { DiscogsCredentials } from "../utils/DiscogsCredentials";
 import { ReleaseContext } from "../contexts/ReleaseContext";
-import { RecordCrateContext } from "../contexts/RecordCrateState";
+// import { RecordCrateContext } from "../contexts/RecordCrateContext";
+import { RCContext } from "../cratestate/RCContext";
 import uuid from "uuid/v4";
+import { IReleaseTrack, ISpotifyItem, ISpotifyRelease } from "../types/interfaces";
+import { IDiscogsAxiosResponse, IDiscogsResult, ISpotifyInputObj } from "../types/discogsInterfaces";
 
 //API Info
 const ROOT_URL = "https://api.discogs.com";
@@ -19,11 +21,12 @@ const SEARCH = "/database/search?";
 const SearchLabelReleases = () => {
   // 'dispatch' here means addRelease (now in the reducer)
   const { dispatch } = useContext(ReleaseContext);
-  const { recordCrate } = useContext(RecordCrateContext);
+  // const { state } = useContext(RecordCrateContext);
+  const { stateRC } = useContext(RCContext);
 
   var [token, setToken] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     const spotify = SpotifyCredentials();
     if (token === "") {
@@ -33,7 +36,7 @@ const SearchLabelReleases = () => {
     }
     console.log("token value:" + token);
 
-    var spotifyInputArr = [];
+    var spotifyInputArr: ISpotifyInputObj[] = [];
     var axios = require("axios");
 
     // NOTE: type = master causes issues so I'm omitting it
@@ -53,13 +56,15 @@ const SearchLabelReleases = () => {
     };
 
     await axios(config)
-      .then(async (response) => {
+      .then(async (response: IDiscogsAxiosResponse) => {
+        // response.data(
+
         console.log(
           "SearchLabelReleases, response:" + JSON.stringify(response.data)
         );
         // ******************
         // FIRST STEP:  console out the variables you're interesting in from Discogs(DCLabelDearchYear2020-2021json is the array),
-        response.data.results.forEach(async (result) => {
+        response.data.results.forEach(async (result: IDiscogsResult) => {
           // Pete TODO: This is an array, if it's a label search, I'm only interested in a match to that label, if it exists, otherwise it's not useful data and should be discarded
           console.log("result.label:" + result.label);
           // Pete TODO: Barcode is an array, you need to pick out the most "barcodey" (12-13 numerics) that exists in the array
@@ -109,7 +114,7 @@ const SearchLabelReleases = () => {
           }
 
           // Need to create an array of all "artist" + "names"  derived from Discogs "titles"
-          const spotifyInputObj = {
+          const spotifyInputObj:ISpotifyInputObj = {
             label: result.label,
             barcode: barCodeOfOurDreams,
             title: result.title,
@@ -136,11 +141,11 @@ const SearchLabelReleases = () => {
         });
         console.log("spotifyInputArr:" + JSON.stringify(spotifyInputArr));
       })
-      .catch((error) => {
+      .catch((error: any) => {
         console.log("SearchLabelReleases, error:" + error);
       });
 
-    let releasesTrackLevel = [];
+    let releasesTrackLevel: IReleaseTrack[] = [];
     for (let i = 0; i < spotifyInputArr.length; i++) {
       // spotifyInputArr.forEach(async (spotInput) => {
       console.log(
@@ -169,10 +174,10 @@ const SearchLabelReleases = () => {
       );
       // get the list of releases
       if (token !== "" && token !== undefined) {
-        await searchForTracks(token, searchTerms).then((releaseDetails) => {
-          releaseDetails.forEach((releaseDetail) => {
+        await searchForTracks(token, searchTerms).then((releaseDetails: ISpotifyRelease[]) => {
+          releaseDetails.forEach((releaseDetail: ISpotifyRelease) => {
             console.log("releaseDetail:" + JSON.stringify(releaseDetail));
-            releaseDetail.tracks.items.forEach((trackDetail) => {
+            releaseDetail.tracks.items.forEach((trackDetail: ISpotifyItem) => {
               console.log("trackDetail:" + JSON.stringify(trackDetail));
 
               var releaseTrack = {
@@ -190,7 +195,7 @@ const SearchLabelReleases = () => {
               };
 
               // Need to filter out release names that are already in the crate....
-              var found = recordCrate.some((crateItem) => {
+              var found = stateRC.recordCrate.some((crateItem) => {
                 console.log(
                   "crateItem.releaseName:" +
                     crateItem.releaseName +
@@ -227,7 +232,7 @@ const SearchLabelReleases = () => {
     dispatch({ type: "ADD_RELEASES", releases: releasesTrackLevel });
   }; // end of handleSubmit
 
-  const searchForTracks = async (token, searchTerms) => {
+  const searchForTracks = async (token: string, searchTerms: string) => {
     console.log("start of searchForTracks, searchTerms:" + searchTerms);
     // "label" search (i need album too)
     let queryReleasesUrl =
@@ -252,8 +257,8 @@ const SearchLabelReleases = () => {
       "searchForTracks, releaseDataJson:" + JSON.stringify(releaseDataJson)
     );
 
-    let tracks = await Promise.all(
-      releaseDataJson.albums.items.map(async (releaseEl) => {
+    let tracks: ISpotifyRelease[] = await Promise.all(
+      releaseDataJson.albums.items.map(async (releaseEl: { href: string; }) => {
         let queryTracksUrl = `${releaseEl.href}`;
         let trackResult = await fetch(queryTracksUrl, {
           method: "GET",
