@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, Fragment, useReducer } from "react";
 import {
   Collapse,
   Navbar,
@@ -8,22 +8,27 @@ import {
   NavItem,
   Container,
 } from "reactstrap";
-import { connect, ConnectedProps, useSelector } from "react-redux";
-import PropTypes from "prop-types";
+import { connect, useSelector } from "react-redux";
+// import PropTypes from "prop-types";
 import RegisterModal from "./auth/RegisterModal";
 import LoginModal from "./auth/LoginModal";
 import Logout from "./auth/Logout";
 import svgLogo from "../images/vinyl-record-yellow-labelNoFont.svg";
 
-import { GlobalProvider } from "../contexts/GlobalState";
+import { GlobalProvider } from "../contexts/GlobalContext";
 
 import ReleaseContextProvider from "../contexts/ReleaseContext";
-import { RecordCrateProvider } from "../contexts/RecordCrateState";
-import { LabelsProvider } from "../contexts/LabelsState";
+
+import { LabelsProvider } from "../contexts/LabelsContext";
 import ReleaseList from "./ReleaseList";
 import CrateList from "./CrateList";
 import LabelList from "./LabelList";
 import Playbar from "./Playbar";
+
+import {
+  RCContext,
+  RCContextProvider /*, state*/,
+} from "../cratestate/RCContext";
 
 // import NewReleaseForm from './NewReleaseForm';
 // import NewCrateItemForm from './NewCrateItemForm';
@@ -31,6 +36,7 @@ import SearchReleaseForm from "./SearchReleasesForm";
 import SearchLabelReleases from "./SearchLabelReleases";
 
 import AddLabelForm from "./AddLabelForm";
+import { useAppSelector } from "./auth/reduxHooks";
 // import { useAudio } from "react-use";
 
 // interface RootState {
@@ -45,13 +51,16 @@ import AddLabelForm from "./AddLabelForm";
 
 // type PropsFromRedux = ConnectedProps<typeof connector>
 
-export const AppNavbar = (props) => {
+export const AppNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const auth = useSelector((state) => state.auth);
+  const auth = useAppSelector((state) => state.auth);
+  // const [state, dispatchRC] = useReducer(rcReducer, initialRCState);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  //Pete Todo Note:  Taking out CrateList, SearchLabelReleases and SearchReleaseForm.
 
   const { isAuthenticated, user } = auth;
   // const [audio, state, controls, ref] = useAudio({
@@ -62,7 +71,7 @@ export const AppNavbar = (props) => {
   const authFilmLinks = (
     <Fragment>
       <GlobalProvider>
-        <RecordCrateProvider>
+        <RCContextProvider>
           <ReleaseContextProvider>
             <LabelsProvider>
               {/* <NavbarNLR /> */}
@@ -71,14 +80,14 @@ export const AppNavbar = (props) => {
               <SearchLabelReleases />
               <ReleaseList />
               <SearchReleaseForm />
-              {/* <NewReleaseForm /> */}
+              {/* <NewReleaseForm />  not currently in Github */}
               <CrateList />
               <Playbar />
 
               {/* <NewCrateItemForm /> */}
             </LabelsProvider>
           </ReleaseContextProvider>
-        </RecordCrateProvider>
+        </RCContextProvider>
       </GlobalProvider>
     </Fragment>
   );

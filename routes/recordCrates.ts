@@ -1,4 +1,5 @@
-const express = require("express");
+// const express = require("express");
+import express from "express";
 const router = express.Router();
 const db = require("../config/database");
 const RecordCrate = require("../models/RecordCrate");
@@ -12,7 +13,7 @@ router.post("/", (req, res) => {
 
   console.log("RecordCrates find all about to be called");
   RecordCrate.findAll()
-    .then((recordCrates) => {
+    .then((recordCrates: string | any[]) => {
       console.log("recordCrates:" + JSON.stringify(recordCrates));
       return res.status(200).json({
         success: true,
@@ -20,7 +21,7 @@ router.post("/", (req, res) => {
         data: recordCrates,
       });
     })
-    .catch((err) => {
+    .catch((err: any) => {
       console.log("err" + err);
       return res.status(500).json({
         success: false,
@@ -83,14 +84,14 @@ router.post("/add", (req, res, next) => {
       releaseName,
       trackName,
     })
-      .then((recordCrate) => {
+      .then((recordCrate: any) => {
         console.log("RecordCrate created");
         return res.status(201).json({
           success: true,
           data: recordCrate,
         });
       })
-      .catch((err) => {
+      .catch((err: any) => {
         console.log("err:" + err);
         return res.status(500).json({
           success: false,
@@ -112,7 +113,7 @@ router.post("/search", (req, res) => {
   RecordCrate.findAll({
     where: { emailAddress: { [Op.like]: "%" + emailAddress + "%" } },
   })
-    .then((recordCrates) => {
+    .then((recordCrates: string | any[]) => {
       console.log("recordCrates:" + JSON.stringify(recordCrates));
       return res.status(200).json({
         success: true,
@@ -120,7 +121,7 @@ router.post("/search", (req, res) => {
         data: recordCrates,
       });
     })
-    .catch((err) => {
+    .catch((err: any) => {
       console.log("err:" + err);
       return res.status(500).json({
         success: false,
