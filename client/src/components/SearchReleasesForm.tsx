@@ -1,19 +1,23 @@
 import React, { useContext, useState } from "react";
 import { ReleaseContext } from "../contexts/ReleaseContext";
-import { RecordCrateContext } from "../contexts/RecordCrateState";
+// import { RecordCrateContext } from "../contexts/RecordCrateContext";
+import { RCContext } from "../cratestate/RCContext";
 import "../styles/formElements.scss";
 import { /*searchForTracksWhittler,*/ getToken } from "../utils/spotifyHelpers";
 import { SpotifyCredentials } from "../utils/SpotifyCredentials";
 import uuid from "uuid/v4";
+import { IRelease, IReleaseTrack, ISpotifyRelease, ISpotifyItem } from "../types/interfaces";
+
 
 const SearchReleaseForm = () => {
   // 'dispatch' here means addRelease (now in the reducer)
   const { dispatch } = useContext(ReleaseContext);
-  const { recordCrate } = useContext(RecordCrateContext);
+  // const { state } = useContext(RecordCrateContext);
+  const { stateRC } = useContext(RCContext);
   const [searchTerms, setSearchTerms] = useState("");
   var [token, setToken] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     const spotify = SpotifyCredentials();
     if (token === "") {
@@ -31,33 +35,44 @@ const SearchReleaseForm = () => {
     // e.g. black%20loops
     //const searchTermField = UICtrl.inputField().searchTerms;
 
+
     encodeURIComponent(searchTermField);
     searchTermField += searchTermAssumption;
     // get the list of releases
-    var releasesTrackLevel = [];
+    var releasesTrackLevel: IReleaseTrack[] = [];
     if (token !== "" && token !== undefined) {
-      await searchForTracks(token, searchTerms).then((releaseDetails) => {
-        releaseDetails.forEach((releaseDetail) => {
+      await searchForTracks(token, searchTerms).then((releaseDetails: ISpotifyRelease[]) => {
+        // this is RELEASE level e.g. EP
+        releaseDetails.forEach((releaseDetail: ISpotifyRelease) => {
           console.log("releaseDetail:" + JSON.stringify(releaseDetail));
-          releaseDetail.tracks.items.forEach((trackDetail) => {
-            console.log("trackDetail:" + JSON.stringify(trackDetail));
+          // this is TRACKS (within releases) levels e.g. every track within a 4-track EP
+          // Note because this is Spotify JSON, there's only ONE "tracks", and then trackItem[] within that
+          releaseDetail.tracks.items.forEach((trackItem: ISpotifyItem) => {
+            console.log("trackDetail:" + JSON.stringify(trackItem));
 
             var releaseTrack = {
-              artists: trackDetail.artists[0].name,
-              href: trackDetail.href,
+              artists: trackItem.artists[0].name,
+              href: trackItem.href,
               releaseName: releaseDetail.name,
-              trackName: trackDetail.name,
+              trackName: trackItem.name,
               label: releaseDetail.label,
-              durationMiSecs: trackDetail.duration_ms,
+              durationMiSecs: trackItem.duration_ms,
               releaseDate: releaseDetail.release_date,
               releaseImage: releaseDetail.images[2].url,
               albumType: releaseDetail.album_type,
-              previewUrl: trackDetail.preview_url,
+              previewUrl: trackItem.preview_url,
               id: uuid(),
             };
 
+            console.log(
+              "recordCrate before it's filtered:" +
+                JSON.stringify(stateRC.recordCrate)
+            );
             // Need to filter out release names that are already in the crate....
-            var found = recordCrate.some((crateItem) => {
+            console.log(
+              "SearchReleaseForm, state(rc):" + JSON.stringify(stateRC)
+            );
+            var found = stateRC.recordCrate.some((crateItem) => {
               console.log(
                 "crateItem.releaseName:" +
                   crateItem.releaseName +
@@ -98,7 +113,7 @@ const SearchReleaseForm = () => {
     setSearchTerms("");
   };
 
-  const searchForTracks = async (token, searchTerms) => {
+  const searchForTracks = async (token: string, searchTerms: string) => {
     console.log("start of searchForTracks, searchTerms:" + searchTerms);
     const queryReleases =
       "https://api.spotify.com/v1/search?q=artist" +
@@ -123,8 +138,8 @@ const SearchReleaseForm = () => {
       "searchForTracks, releaseDataJson:" + JSON.stringify(releaseDataJson)
     );
 
-    let tracks = await Promise.all(
-      releaseDataJson.albums.items.map(async (releaseEl) => {
+    let tracks: ISpotifyRelease[] = await Promise.all(
+      releaseDataJson.albums.items.map(async (releaseEl: { href: string; }) => {
         let queryTracksUrl = `${releaseEl.href}`;
         let trackResult = await fetch(queryTracksUrl, {
           method: "GET",

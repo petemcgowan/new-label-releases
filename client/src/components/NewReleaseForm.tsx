@@ -8,7 +8,7 @@ const NewReleaseForm = () => {
   const [artists, setArtists] = useState("");
   const [releaseName, setReleaseName] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     dispatch({
       type: "ADD_DUMMY_RELEASE",
