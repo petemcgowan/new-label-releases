@@ -7,17 +7,19 @@ import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IReleaseTrack } from "../types/interfaces";
 
-const formatTime = (inputSeconds) => {
-  let seconds = Math.floor(inputSeconds % 60);
-  if (seconds < 10) seconds = `0${seconds}`;
+const formatTime = (inputSeconds: number) => {
+  let seconds: number = Math.floor(inputSeconds % 60);  // e.g. 6 if input is 9
 
   const minutes = Math.floor(inputSeconds / 60);
-
-  return `${minutes}:${seconds}`;
+  if (seconds < 10)
+    return `${minutes}:0${seconds}` // making sure its prepened by 0
+  else
+    return `${minutes}:${seconds}`;
 };
 
-const handleProgress = (currentTime, duration) =>
+const handleProgress = (currentTime: number, duration: number) =>
   600 * (currentTime / duration);
 
 const Playbar = () => {
@@ -25,9 +27,9 @@ const Playbar = () => {
 
   const setVolume = useCallback((e) => {
     dispatch({ type: "SET_VOLUME", volume: e.target.value });
-  });
+  }, []);
 
-  let currentRelease;
+  let currentRelease: IReleaseTrack | undefined;
   if (state.releases) {
     currentRelease = state.releases.find(({ id }) => {
       return id === state.currentSongId;
@@ -67,11 +69,11 @@ const Playbar = () => {
     <div className="Playbar" css={CSS}>
       <div className="left">
         {currentRelease && (
-          <>
+          <React.Fragment>
             <div>{currentRelease.trackName}</div>
 
             <div className="artist">{currentRelease.artists}</div>
-          </>
+          </React.Fragment>
         )}
       </div>
 
