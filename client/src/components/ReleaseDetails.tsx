@@ -1,19 +1,27 @@
 import React, { useContext, useState } from "react";
 import { ReleaseContext } from "../contexts/ReleaseContext";
 
-import { RecordCrateContext } from "../contexts/RecordCrateState";
-
+import { RCContext } from "../cratestate/RCContext";
 import { getEmail } from "../utils/helpers";
 import "../styles/uiElements.scss";
 import "../styles/homepage.scss";
 import PlayPause from "./PlayPause";
+import { addAxiosRecord } from "../cratestate/RCActions";
+import { IReleaseTrack } from "../types/interfaces";
 
 const nullw500 = require("../images/nullw500.png");
 
-const ReleaseDetails = ({ release }) => {
+interface ReleaseRowProps {
+  release: IReleaseTrack
+}
+
+
+const ReleaseDetails = ({ release }: ReleaseRowProps) => {
   const { state, dispatch } = useContext(ReleaseContext);
-  const { addRecordCrate } = useContext(RecordCrateContext);
-  const [playVisibleId, setPlayVisibleId] = useState(false);
+  // const { addRecordCrateNew } = useContext(RecordCrateContext);
+  const { dispatchRC } = useContext(RCContext);
+  // const [playVisibleId, setPlayVisibleId] = useState(false);
+  const [playVisibleId, setPlayVisibleId] = useState("");
 
   // className="movie-item" -< not sure if this style is needed
   return (
@@ -57,12 +65,19 @@ const ReleaseDetails = ({ release }) => {
                 release.trackName
             );
             dispatch({ type: "REMOVE_RELEASE", release });
-            addRecordCrate(
-              release.artists,
-              release.releaseName,
-              release.trackName,
-              getEmail()
-            );
+
+            // : IRecord
+            let recordCrateItem = {
+              // this will be ignored when serializing as we don't know RC ID here
+              id: release.id,
+              artists: release.artists,
+              releaseName: release.releaseName,
+              trackName: release.trackName,
+              emailAddress: getEmail(),
+            };
+
+            addAxiosRecord(dispatchRC, recordCrateItem);
+            // addRecordCrateNew(recordCrateItem);
           }}
         >
           Add to Cart
