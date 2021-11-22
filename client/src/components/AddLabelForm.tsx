@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
-import { LabelsContext } from "../contexts/LabelsState";
+import { LabelsContext } from "../contexts/LabelsContext";
 import "../styles/formElements.scss";
 
 const AddLabelForm = () => {
   const { addLabel } = useContext(LabelsContext);
   const [labelValue, setLabelValue] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     console.log("AddLabelForm, labelValue:" + labelValue);
     e.preventDefault();
     addLabel(labelValue);
