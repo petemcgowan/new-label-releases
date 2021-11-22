@@ -1,8 +1,14 @@
 import React, { useContext } from "react";
-import { LabelsContext } from "../contexts/LabelsState";
+import { LabelsContext } from "../contexts/LabelsContext";
+import { ILabel } from "../reducers/LabelsReducer";
 import "../styles/uiElements.scss";
 
-const LabelsDetails = ({ label }) => {
+interface LabelRowProps {
+  label: ILabel
+}
+
+
+const LabelsDetails = ({ label }: LabelRowProps) => {
   const { deleteLabel } = useContext(LabelsContext);
   return (
     <tr>
