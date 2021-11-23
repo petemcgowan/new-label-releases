@@ -1,18 +1,29 @@
 import React, { useContext, useState } from "react";
-import { RecordCrateContext } from "../contexts/RecordCrateState";
+// import { RecordCrateContext } from "../contexts/RecordCrateContext";
+import { RCContext } from "../cratestate/RCContext";
 import "../styles/formElements.scss";
+import { addAxiosRecord } from "../cratestate/RCActions";
+import { IRecord } from "../cratestate/RCState";
+import { getEmail } from "../utils/helpers";
 
 const NewCrateItemForm = () => {
-  const { addRecordCrate } = useContext(RecordCrateContext);
+  // const { addRecordCrateNew } = useContext(RecordCrateContext);
+  const { stateRC, dispatchRC } = useContext(RCContext);
   const [artists, setArtists] = useState("");
   const [releaseName, setReleaseName] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    addRecordCrate({
-      type: "ADD_RECORD_CRATE",
-      crateItem: { artists, releaseName },
-    });
+
+    let recordCrateItem: IRecord = {
+      id: "dummy",
+      artists: artists,
+      releaseName: releaseName,
+      trackName: "release.DUMMYtrackName",
+      emailAddress: getEmail(),
+    };
+
+    addAxiosRecord(dispatchRC, recordCrateItem);
     setArtists("");
     setReleaseName("");
   };
