@@ -11,24 +11,35 @@ import {
   NavLink,
   Alert,
 } from "reactstrap";
-import { connect, useSelector, useDispatch } from "react-redux";
-import PropTypes from "prop-types";
+import { connect } from "react-redux";
+
 import { login } from "../../actions/authActions";
 import { clearErrors } from "../../actions/errorActions";
+import { IAuthFunction } from "../../types/interfaces";
+import { useAppSelector } from "./reduxHooks";
 
-export const LoginModal = ({ login, clearErrors }) => {
-  const [modal, setModal] = useState(false);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+interface ILoginModal
+{
+  login : (args_0: IAuthFunction) => void,
+  clearErrors : ()=>void,
+}
+
+// (args_0: IAuthFunction) => void; clearErrors: () => { type: string; }; }, ILoginModal>>'.
+
+
+export const LoginModal = ({ login, clearErrors }: ILoginModal) => {
+  const [modal, setModal] = useState<boolean>(false);
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
   const [msg, setMsg] = useState(null);
-  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
-  const error = useSelector((state) => state.error);
+  const isAuthenticated = useAppSelector((state) => state.auth.isAuthenticated);
+  const error = useAppSelector((state) => state.error);
   const prevError = usePrevious(error);
   // const prevError = usePrevious(error);
 
   /*More info here: https://reactjs.org/docs/hooks-faq.html#how-to-get-the-previous-props-or-state */
-  function usePrevious(value) {
-    const ref = useRef();
+  function usePrevious<T>(value: T): T {
+    const ref: any = useRef<T>();
     useEffect(() => {
       ref.current = value;
     });
@@ -69,7 +80,7 @@ export const LoginModal = ({ login, clearErrors }) => {
     setModal(!modal);
   };
 
-  const onChangeEmail = (e) => {
+  const onChangeEmail = (e: { target: { name: string; value: React.SetStateAction<string>; }; }) => {
     console.log(
       "LoginModal, onChangeEmail, name:" +
         e.target.name +
@@ -79,7 +90,7 @@ export const LoginModal = ({ login, clearErrors }) => {
     setEmail(e.target.value);
   };
 
-  const onChangePassword = (e) => {
+  const onChangePassword = (e: { target: { name: string; value: React.SetStateAction<string>; }; }) => {
     console.log(
       "LoginModal, onChangePassword, name:" +
         e.target.name +
@@ -89,7 +100,7 @@ export const LoginModal = ({ login, clearErrors }) => {
     setPassword(e.target.value);
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
     const user = {
