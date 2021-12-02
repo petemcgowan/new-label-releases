@@ -15,8 +15,17 @@ import { connect, useSelector } from "react-redux";
 import PropTypes from "prop-types";
 import { register } from "../../actions/authActions";
 import { clearErrors } from "../../actions/errorActions";
+import { useAppSelector } from "./reduxHooks";
+import { IAuthFunction } from "../../types/interfaces";
 
-export const RegisterModal = ({ clearErrors, register }) => {
+interface IRegisterModal
+{
+  register : (args_0: IAuthFunction) => void,
+  clearErrors : ()=>void,
+}
+
+
+export const RegisterModal = ({ clearErrors, register }: IRegisterModal) => {
   const [modal, setModal] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -24,13 +33,13 @@ export const RegisterModal = ({ clearErrors, register }) => {
   const [msg, setMsg] = useState(null);
   // const prevErrorRef = useRef();
 
-  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
-  const error = useSelector((state) => state.error);
+  const isAuthenticated = useAppSelector((state) => state.auth.isAuthenticated);
+  const error = useAppSelector((state) => state.error);
   const prevError = usePrevious(error);
 
   /*More info here: https://reactjs.org/docs/hooks-faq.html#how-to-get-the-previous-props-or-state */
-  function usePrevious(value) {
-    const ref = useRef();
+  function usePrevious<T>(value: T): T {
+    const ref: any = useRef<T>();
     useEffect(() => {
       ref.current = value;
     });
@@ -70,7 +79,7 @@ export const RegisterModal = ({ clearErrors, register }) => {
     setModal(!modal);
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
     // Create user object

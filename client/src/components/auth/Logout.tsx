@@ -4,7 +4,13 @@ import { connect } from "react-redux";
 import { logout } from "../../actions/authActions";
 import PropTypes from "prop-types";
 
-export const Logout = ({ logout }) => {
+
+interface ILogout
+{
+  logout : ()=>void,
+}
+
+export const Logout = ({ logout }: ILogout) => {
   // const logout = logout;
 
   return (
