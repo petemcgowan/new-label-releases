@@ -32,3 +32,4 @@ client/src/utils/Credentials.js
 client/src/utils/SpotifyCredentials.js
 .gitignore
 client/src/utils/DiscogsCredentials.js
+client/src/utils/DiscogsCredentials.ts
