@@ -27,7 +27,16 @@ TODO: That Postman collection could be a project in its own right.
 
 ## Technical details
 
-This is a full stack app using React, PostgresSQL, Sequilize, ES7, Hooks, React State, Node/Express etc.
+This is a full stack app using:
+
+- React JS / ES7 / Webpack
+- PostgresSQL
+- Sequilize
+- React Hooks
+- React State
+- Node / Express, Npm
+- SCSS / CSS
+- Adobe Illustrator
 
 - TODO: Run app, document your steps
 - TODO: Include Spotify and Discogs API links.
