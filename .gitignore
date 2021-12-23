@@ -33,3 +33,4 @@ client/src/utils/SpotifyCredentials.js
 .gitignore
 client/src/utils/DiscogsCredentials.js
 client/src/utils/DiscogsCredentials.ts
+.DS_Store
