@@ -23,7 +23,10 @@ import { LabelsProvider } from "../contexts/LabelsContext";
 import ReleaseList from "./ReleaseList";
 import CrateList from "./CrateList";
 import LabelList from "./LabelList";
-import Playbar from "./Playbar";
+// import Playbar from "./Playbar";
+import tracks from "../data/tracks";
+
+import AudioPlayer from "./AudioPlayer";
 
 import {
   RCContext,
@@ -38,6 +41,8 @@ import SearchLabelReleases from "./SearchLabelReleases";
 import AddLabelForm from "./AddLabelForm";
 import { useAppSelector } from "./auth/reduxHooks";
 // import { useAudio } from "react-use";
+
+
 
 // interface RootState {
 //   isOpen: boolean
@@ -79,10 +84,11 @@ export const AppNavbar = () => {
               <LabelList />
               <SearchLabelReleases />
               <ReleaseList />
+              {/* <AudioPlayer tracks={tracks} /> */}
               <SearchReleaseForm />
               {/* <NewReleaseForm />  not currently in Github */}
               <CrateList />
-              <Playbar />
+              {/* <Playbar /> */}
 
               {/* <NewCrateItemForm /> */}
             </LabelsProvider>
