@@ -1,0 +1,161 @@
+{
+  "albums": {
+    "href": "https://api.spotify.com/v1/search?query=artist%3ABlack+Loops+year%3A2019-2020&type=album&market=DE&locale=en-US%2Cen%3Bq%3D0.9&offset=0&limit=3",
+    "items": [
+      {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6AwGe2F49hD3ANXvmOwqQB"
+            },
+            "href": "https://api.spotify.com/v1/artists/6AwGe2F49hD3ANXvmOwqQB",
+            "id": "6AwGe2F49hD3ANXvmOwqQB",
+            "name": "Black Loops",
+            "type": "artist",
+            "uri": "spotify:artist:6AwGe2F49hD3ANXvmOwqQB"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/5Ki88XhcuWUk8WlXmaKrwS"
+        },
+        "href": "https://api.spotify.com/v1/albums/5Ki88XhcuWUk8WlXmaKrwS",
+        "id": "5Ki88XhcuWUk8WlXmaKrwS",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b27308ba86c62d62b8929a3a28de",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e0208ba86c62d62b8929a3a28de",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d0000485108ba86c62d62b8929a3a28de",
+            "width": 64
+          }
+        ],
+        "name": "Ode to Ipse",
+        "release_date": "2020-08-07",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:5Ki88XhcuWUk8WlXmaKrwS"
+      },
+      {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6AwGe2F49hD3ANXvmOwqQB"
+            },
+            "href": "https://api.spotify.com/v1/artists/6AwGe2F49hD3ANXvmOwqQB",
+            "id": "6AwGe2F49hD3ANXvmOwqQB",
+            "name": "Black Loops",
+            "type": "artist",
+            "uri": "spotify:artist:6AwGe2F49hD3ANXvmOwqQB"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3O6DGyyaEiSpqXfr7qmR9c"
+            },
+            "href": "https://api.spotify.com/v1/artists/3O6DGyyaEiSpqXfr7qmR9c",
+            "id": "3O6DGyyaEiSpqXfr7qmR9c",
+            "name": "Nikoss",
+            "type": "artist",
+            "uri": "spotify:artist:3O6DGyyaEiSpqXfr7qmR9c"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0JG3k3edHymITccOhaaOaS"
+        },
+        "href": "https://api.spotify.com/v1/albums/0JG3k3edHymITccOhaaOaS",
+        "id": "0JG3k3edHymITccOhaaOaS",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b27398ed24d85696780db0152bfa",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e0298ed24d85696780db0152bfa",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d0000485198ed24d85696780db0152bfa",
+            "width": 64
+          }
+        ],
+        "name": "Remind Me",
+        "release_date": "2019-04-19",
+        "release_date_precision": "day",
+        "total_tracks": 2,
+        "type": "album",
+        "uri": "spotify:album:0JG3k3edHymITccOhaaOaS"
+      },
+      {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6AwGe2F49hD3ANXvmOwqQB"
+            },
+            "href": "https://api.spotify.com/v1/artists/6AwGe2F49hD3ANXvmOwqQB",
+            "id": "6AwGe2F49hD3ANXvmOwqQB",
+            "name": "Black Loops",
+            "type": "artist",
+            "uri": "spotify:artist:6AwGe2F49hD3ANXvmOwqQB"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2b0RuGsc46tbjAwZMWnJJm"
+            },
+            "href": "https://api.spotify.com/v1/artists/2b0RuGsc46tbjAwZMWnJJm",
+            "id": "2b0RuGsc46tbjAwZMWnJJm",
+            "name": "Ruff Stuff",
+            "type": "artist",
+            "uri": "spotify:artist:2b0RuGsc46tbjAwZMWnJJm"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4hCLKJXTMOYTWAdXRHYUIo"
+        },
+        "href": "https://api.spotify.com/v1/albums/4hCLKJXTMOYTWAdXRHYUIo",
+        "id": "4hCLKJXTMOYTWAdXRHYUIo",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2732539464b67ec5eff3f165120",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e022539464b67ec5eff3f165120",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d000048512539464b67ec5eff3f165120",
+            "width": 64
+          }
+        ],
+        "name": "Is Electro Still A Thing",
+        "release_date": "2020-06-19",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:4hCLKJXTMOYTWAdXRHYUIo"
+      }
+    ],
+    "limit": 3,
+    "next": "https://api.spotify.com/v1/search?query=artist%3ABlack+Loops+year%3A2019-2020&type=album&market=DE&locale=en-US%2Cen%3Bq%3D0.9&offset=3&limit=3",
+    "offset": 0,
+    "previous": null,
+    "total": 17
+  }
+}
