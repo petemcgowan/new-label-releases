@@ -12,11 +12,12 @@ import { IReleaseTrack } from "../types/interfaces";
 const nullw500 = require("../images/nullw500.png");
 
 interface ReleaseRowProps {
-  release: IReleaseTrack
+  release: IReleaseTrack,
+  trackIndex: number
 }
 
 
-const ReleaseDetails = ({ release }: ReleaseRowProps) => {
+const ReleaseDetails = ({ release, trackIndex }: ReleaseRowProps) => {
   const { state, dispatch } = useContext(ReleaseContext);
   // const { addRecordCrateNew } = useContext(RecordCrateContext);
   const { dispatchRC } = useContext(RCContext);
@@ -29,7 +30,6 @@ const ReleaseDetails = ({ release }: ReleaseRowProps) => {
       <td
         onMouseEnter={() => {
           setPlayVisibleId(release.id);
-          console.log("SPV:Enter:release.id" + release.id);
         }}
         onMouseLeave={() => {
           setPlayVisibleId("");
@@ -41,6 +41,7 @@ const ReleaseDetails = ({ release }: ReleaseRowProps) => {
           songId={release.id}
           isCurrentSong={state.currentSongId === release.id}
           visible={playVisibleId === release.id}
+          trackIndex={trackIndex}
         />
 
         <span style={{ marginRight: 10 }} />
@@ -48,7 +49,7 @@ const ReleaseDetails = ({ release }: ReleaseRowProps) => {
       </td>
       <td>
         <img
-          src={release.releaseImage ? `${release.releaseImage}` : `${nullw500}`}
+          src={release.releaseSmallImage ? `${release.releaseSmallImage}` : `${nullw500}`}
           alt={`Album Cover`}
         />
       </td>
