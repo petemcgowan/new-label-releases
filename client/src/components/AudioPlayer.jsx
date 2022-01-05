@@ -17,7 +17,7 @@ import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 
 const AudioPlayer = ({ tracks }) => {
   // State
-  const [trackIndex, setTrackIndex] = useState(0);
+  // const [trackIndex, setTrackIndex] = useState(0);
 
   // const [isPlaying, setIsPlaying] = useState(false);
   const { state, dispatch } = useContext(ReleaseContext);
@@ -45,19 +45,63 @@ const AudioPlayer = ({ tracks }) => {
   // --------------------------------
 
   const toPrevTrack = () => {
-    if (trackIndex - 1 < 0) {
-      setTrackIndex(tracks.length - 1);
+    /*Pete todo:
+     * Need to dispatch of "PLAY" type, but with the song ID from the previous track.
+     * If this is the 0th element, don't do anything.
+     * Output the current
+     */
+
+    if (state.trackIndex - 1 < 0) {
+      // dispatch({ type: "SET_TRACK_INDEX", trackIndex: 0 }); // this doesn't roll around
+      // dispatch({ type: "SET_TRACK_INDEX", trackIndex: state.releases.length - 1 }); // this rolls around
+      dispatch({
+        type: "PLAY",
+        songId: state.releases[0].id,
+        trackIndex: 0,
+      });
     } else {
-      setTrackIndex(trackIndex - 1);
+      // dispatch({ type: "SET_TRACK_INDEX", trackIndex: state.trackIndex - 1 }); // this doesn't roll around
+      dispatch({
+        type: "PLAY",
+        songId: state.releases[state.trackIndex - 1].id,
+        trackIndex: state.trackIndex - 1,
+      });
     }
+    console.log(
+      "toPrevTrack:state.trackIndex:" +
+        state.trackIndex +
+        ", state.currentSongId:" +
+        state.currentSongId +
+        ", state.releases[trackIndex].id:" +
+        state.releases[state.trackIndex].id
+    );
   };
 
   const toNextTrack = () => {
-    if (trackIndex < tracks.length - 1) {
-      setTrackIndex(trackIndex + 1);
+    //TODO I need to store this in the release context.  SET_TRACK_INDEX and trackIndex.  Use a dispatch here instead  It also needs to be called on "individual play/pause".
+    if (state.trackIndex < state.releases.length - 1) {
+      // dispatch({ type: "SET_TRACK_INDEX", trackIndex: state.trackIndex + 1 });
+      dispatch({
+        type: "PLAY",
+        songId: state.releases[state.trackIndex + 1].id,
+        trackIndex: state.trackIndex + 1,
+      });
     } else {
-      setTrackIndex(0);
+      // dispatch({ type: "SET_TRACK_INDEX", trackIndex: 0 });
+      dispatch({
+        type: "PLAY",
+        songId: state.releases[0].id,
+        trackIndex: 0,
+      });
     }
+    console.log(
+      "toNextTrack:state.trackIndex:" +
+        state.trackIndex +
+        ", state.currentSongId:" +
+        state.currentSongId +
+        ", state.releases[trackIndex].id:" +
+        state.releases[state.trackIndex].id
+    );
   };
 
   /* Effect is mutating the DOM (via a DOM node ref) and the DOM mutation will change the appearance of the DOM node between the time
@@ -147,7 +191,7 @@ const AudioPlayer = ({ tracks }) => {
 
   return (
     <div className="audio-player">
-      <div className="left">
+      {/* <div className="left">
         {currentRelease && (
           <React.Fragment>
             <div>{currentRelease.trackName}</div>
@@ -155,13 +199,13 @@ const AudioPlayer = ({ tracks }) => {
             <div className="artist">{currentRelease.artists}</div>
           </React.Fragment>
         )}
-      </div>
+      </div> */}
       <div className="track-info">
         {currentRelease && (
           <React.Fragment>
             <img
               className="artwork"
-              src={currentRelease.releaseImage /*image*/}
+              src={currentRelease.releaseMidImage /*image*/}
               alt={`track artwork for ${currentRelease.trackName} by ${currentRelease.artists}`}
             />
             <h2 className="title">{currentRelease.trackName}</h2>
@@ -176,7 +220,7 @@ const AudioPlayer = ({ tracks }) => {
         )}
       </div>
       <Backdrop
-        trackIndex={trackIndex}
+        trackIndex={state.trackIndex}
         activeColor="#CFE3E2"
         isPlaying={state.playing}
       />
