@@ -188,9 +188,11 @@ const SearchLabelReleases = () => {
                 label: releaseDetail.label,
                 durationMiSecs: trackDetail.duration_ms,
                 releaseDate: releaseDetail.release_date,
-                releaseImage: releaseDetail.images[2].url,
+                releaseSmallImage: releaseDetail.images[2].url,  // 0 is biggest, 2 is smallest
+                releaseMidImage: releaseDetail.images[1].url,  // 0 is biggest, 2 is smallest
                 albumType: releaseDetail.album_type,
                 previewUrl: trackDetail.preview_url,
+                openSpotUrl: trackDetail.external_urls.spotify,
                 id: uuid(),
               };
 

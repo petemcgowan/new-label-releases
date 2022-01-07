@@ -58,9 +58,11 @@ const SearchReleaseForm = () => {
               label: releaseDetail.label,
               durationMiSecs: trackItem.duration_ms,
               releaseDate: releaseDetail.release_date,
-              releaseImage: releaseDetail.images[2].url,
+              releaseSmallImage: releaseDetail.images[2].url,  // 0 is biggest, 2 is smallest
+              releaseMidImage: releaseDetail.images[1].url,  // 0 is biggest, 2 is smallest
               albumType: releaseDetail.album_type,
               previewUrl: trackItem.preview_url,
+              openSpotUrl: trackItem.external_urls.spotify,
               id: uuid(),
             };
 
@@ -141,6 +143,7 @@ const SearchReleaseForm = () => {
     let tracks: ISpotifyRelease[] = await Promise.all(
       releaseDataJson.albums.items.map(async (releaseEl: { href: string; }) => {
         let queryTracksUrl = `${releaseEl.href}`;
+        console.log("queryTracksUrl:" + queryTracksUrl);
         let trackResult = await fetch(queryTracksUrl, {
           method: "GET",
           headers: { Authorization: "Bearer " + token },
