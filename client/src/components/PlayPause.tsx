@@ -9,9 +9,10 @@ interface PlayPauseProps {
   songId : string;
   isCurrentSong: boolean;
   visible : boolean;
+  trackIndex: number
 }
 
-const PlayPause = ({ playing, songId, isCurrentSong, visible } : PlayPauseProps) => {
+const PlayPause = ({ playing, songId, isCurrentSong, visible, trackIndex } : PlayPauseProps) => {
   const { dispatch } = useContext(ReleaseContext);
   const style = { visibility: visible ? "visible" : "hidden" };
 
@@ -19,7 +20,10 @@ const PlayPause = ({ playing, songId, isCurrentSong, visible } : PlayPauseProps)
     return (
       <FontAwesomeIcon
         icon={faPause}
-        onClick={() => dispatch({ type: "PAUSE" })}
+        onClick={() => {
+          console.log ("Play icon PAUSE, songId:" + songId + ", trackIndex:" +  trackIndex);
+          dispatch({ type: "PAUSE" })}
+        }
         // style={style}  //pete todo always visible, but I actually prefer this?
         />
     );
@@ -27,7 +31,10 @@ const PlayPause = ({ playing, songId, isCurrentSong, visible } : PlayPauseProps)
     return (
       <FontAwesomeIcon
         icon={faPlay}
-        onClick={() => dispatch({ type: "PLAY", songId })}
+        onClick={() => {
+          console.log ("Play icon PLAY, songId:" + songId + ", trackIndex:" +  trackIndex);
+          dispatch({ type: "PLAY", songId, trackIndex })}
+        }
         // style={style}
       />
     );
@@ -35,15 +42,3 @@ const PlayPause = ({ playing, songId, isCurrentSong, visible } : PlayPauseProps)
 };
 
 export default PlayPause;
-
-/* TODO delete temp
-
-Get me ANY style that works.  I need to see ANY working example, then an example of same in TS.  style is a very broad concept.  It seems to be intimating that I need a number OR string union?  Which makes no sense.
-
-
-Type '{ visibility: string; }' is not assignable to type 'Properties<string | number, string & {}>'.
-
-Type '{ visibility: string; }' is not assignable to type 'Properties<string | number, string & {}>'.
-  Types of property 'visibility' are incompatible.
-    Type 'string' is not assignable to type 'Visibility | undefined'.
-    */

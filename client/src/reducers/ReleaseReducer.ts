@@ -7,6 +7,7 @@ import {
   SET_VOLUME,
   SET_DURATION,
   SET_CURRENT_TIME,
+  SET_TRACK_INDEX,
   PLAY,
   PAUSE,
 } from "../actions/types";
@@ -23,6 +24,7 @@ const DEFAULT_VOLUME = 0.65;
 export const initialReleaseState = {
   currentSongId: "",
   currentTime: 0,
+  trackIndex: 0,
   duration: 0,
   playing: false,
   volume: DEFAULT_VOLUME,
@@ -32,6 +34,7 @@ export const initialReleaseState = {
 export interface IInitialReleaseState {
   currentSongId: string;
   currentTime: number;
+  trackIndex: number;
   duration: number;
   playing: boolean;
   volume: number;
@@ -91,6 +94,10 @@ export const ReleaseReducer = (
       return { ...state, volume: parseFloat(action.volume) };
     case SET_DURATION:
       return { ...state, duration: action.duration };
+    case SET_TRACK_INDEX: {
+      console.log("Setting track index to" + action.trackIndex);
+      return { ...state, trackIndex: action.trackIndex };
+    }
     case SET_CURRENT_TIME:
       return { ...state, currentTime: action.time };
     case PLAY: {
@@ -99,6 +106,7 @@ export const ReleaseReducer = (
         ...state,
         playing: true,
         currentSongId: action.songId || state.currentSongId,
+        trackIndex: action.trackIndex,
       };
     }
     case PAUSE: {

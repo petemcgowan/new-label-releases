@@ -9,18 +9,8 @@ import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IReleaseTrack } from "../types/interfaces";
 
-const formatTime = (inputSeconds: number) => {
-  let seconds: number = Math.floor(inputSeconds % 60);  // e.g. 6 if input is 9
+import { formatTime, handleProgress } from "../utils/helpers";
 
-  const minutes = Math.floor(inputSeconds / 60);
-  if (seconds < 10)
-    return `${minutes}:0${seconds}` // making sure its prepened by 0
-  else
-    return `${minutes}:${seconds}`;
-};
-
-const handleProgress = (currentTime: number, duration: number) =>
-  600 * (currentTime / duration);
 
 const Playbar = () => {
   const { state, dispatch } = useContext(ReleaseContext);
@@ -32,6 +22,9 @@ const Playbar = () => {
   let currentRelease: IReleaseTrack | undefined;
   if (state.releases) {
     currentRelease = state.releases.find(({ id }) => {
+      // console.log(
+      //   "Playbar, currentRelease set:" + JSON.stringify(currentRelease)
+      // );
       return id === state.currentSongId;
     });
   }
@@ -170,7 +163,7 @@ const CSS = css`
       .bar {
         height: 100%;
         /* height: 100px; */
-        background-color: rgb(167 167 167);
+        background-color: rgb(167, 167, 167);
       }
     }
   }

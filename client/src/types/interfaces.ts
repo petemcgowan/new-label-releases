@@ -127,6 +127,7 @@ export interface IReleaseAction {
   // payload?: IRelease[];
   releases: IReleaseTrack[];
   release: IReleaseTrack;
+  trackIndex: number;
   volume: string;
   duration: number;
   songId: string;
@@ -135,6 +136,10 @@ export interface IReleaseAction {
 
 export interface ISpotifyArtist {
   name: string;
+}
+
+export interface ISpotifyExternalUrl {
+  spotify: string;
 }
 
 export interface ISpotifyImage {
@@ -147,6 +152,7 @@ export interface ISpotifyItem {
   href: string;
   duration_ms: string;
   preview_url: string;
+  external_urls: ISpotifyExternalUrl;
 }
 
 export interface ISpotifyTrack {
@@ -186,7 +192,8 @@ export interface IReleaseTrack {
   label: string;
   durationMiSecs: string;
   releaseDate: string; // is this not a date?
-  releaseImage: string; // this is a URL
+  releaseSmallImage: string; // this is a URL
+  releaseMidImage: string; // this is a URL
   albumType: string;
   previewUrl: string;
 }
