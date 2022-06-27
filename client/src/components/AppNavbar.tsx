@@ -1,4 +1,7 @@
-import React, { useState, Fragment, useReducer } from "react";
+import { useState, Fragment } from "react";
+// eslint-disable-next-line
+import React from 'react'
+
 import {
   Collapse,
   Navbar,
@@ -8,12 +11,13 @@ import {
   NavItem,
   Container,
 } from "reactstrap";
-import { connect, useSelector } from "react-redux";
+import { connect } from "react-redux";
 // import PropTypes from "prop-types";
 import RegisterModal from "./auth/RegisterModal";
 import LoginModal from "./auth/LoginModal";
 import Logout from "./auth/Logout";
-import svgLogo from "../images/vinyl-record-yellow-labelNoFont.svg";
+// import svgLogo from "../images/vinyl-record-yellow-labelNoFont.svg";
+import svgLogo2 from "../images/Vinyl_record.svg";
 
 import { GlobalProvider } from "../contexts/GlobalContext";
 
@@ -23,13 +27,8 @@ import { LabelsProvider } from "../contexts/LabelsContext";
 import ReleaseList from "./ReleaseList";
 import CrateList from "./CrateList";
 import LabelList from "./LabelList";
-// import Playbar from "./Playbar";
-import tracks from "../data/tracks";
-
-import AudioPlayer from "./AudioPlayer";
 
 import {
-  RCContext,
   RCContextProvider /*, state*/,
 } from "../cratestate/RCContext";
 
@@ -149,7 +148,7 @@ export const AppNavbar = () => {
         <Container>
           <NavbarBrand href="/">
             <img
-              src={svgLogo}
+              src={svgLogo2}
               width="128"
               height="42"
               className="d-inline-block align-top"

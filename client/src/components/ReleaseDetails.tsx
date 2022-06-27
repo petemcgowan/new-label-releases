@@ -1,4 +1,7 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
+// eslint-disable-next-line
+import React from 'react'
+
 import { ReleaseContext } from "../contexts/ReleaseContext";
 
 import { RCContext } from "../cratestate/RCContext";
@@ -68,7 +71,7 @@ const ReleaseDetails = ({ release, trackIndex }: ReleaseRowProps) => {
             dispatch({ type: "REMOVE_RELEASE", release });
 
             // : IRecord
-            let recordCrateItem = {
+            const recordCrateItem = {
               // this will be ignored when serializing as we don't know RC ID here
               id: release.id,
               artists: release.artists,

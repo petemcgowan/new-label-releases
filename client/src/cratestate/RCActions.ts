@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { IRecord, AxiosResponseArray, AxiosResponseObject } from "./RCState";
 import axios from "axios";
 import { getEmail } from "../utils/helpers";
@@ -35,19 +36,8 @@ export interface Error {
   payload: { error: string };
 }
 
-// // Set Loading
-// export const setLoading = (dispatch, status) =>
-//   dispatch({ type: "SET_LOADING", payload: status });
-
-// // Set Error
-// export const setError = (dispatch, error) =>
-//   dispatch({
-//     type: "SET_ERROR",
-//     payload: { error: error.status, message: error.message },
-//   });
-
 export const searchAxiosRecord = async (
-  dispatchRC: (arg0: Search | Error) => void
+  dispatchRC: (arg0: Error | Search) => void
 ) => {
   try {
     const config = {

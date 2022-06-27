@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
 
-const Backdrop = ({ activeColor, trackIndex, isPlaying }) => {
+interface BackdropProps {
+  activeColor: string;
+  trackIndex: number;
+  isPlaying: boolean;
+}
+
+const Backdrop = ({ activeColor, trackIndex, isPlaying }: BackdropProps) => {
   useEffect(() => {
     document.documentElement.style.setProperty("--active-color", activeColor);
   }, [trackIndex, activeColor]);

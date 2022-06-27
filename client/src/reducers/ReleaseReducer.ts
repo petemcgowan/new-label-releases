@@ -12,12 +12,7 @@ import {
   PAUSE,
 } from "../actions/types";
 
-import {
-  IAction,
-  IReleaseAction,
-  IRelease,
-  IReleaseTrack,
-} from "../types/interfaces";
+import { IReleaseAction, IReleaseTrack } from "../types/interfaces";
 
 const DEFAULT_VOLUME = 0.65;
 

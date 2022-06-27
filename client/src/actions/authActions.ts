@@ -4,32 +4,26 @@ import reduxAuthStore from "../reduxAuthStore";
 import {
   USER_LOADED,
   USER_LOADING,
-  AUTH_ERROR,
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT_SUCCESS,
   REGISTER_SUCCESS,
   REGISTER_FAIL,
 } from "./types";
-import { IAuthFunction, IConfigHeaders, IRegData } from "../types/interfaces";
-import authReducer from "../reducers/authReducer";
+import { IAuthFunction, IConfigHeaders } from "../types/interfaces";
 
-interface RegUser {
-  token: string;
-  user: number;
-  id: string;
-  name: string;
-  email: string;
-}
+// interface RegUser {
+//   token: string;
+//   user: number;
+//   id: string;
+//   name: string;
+//   email: string;
+// }
 
-interface ServerData {
-  token: string;
-  user: RegUser;
-}
-
-interface IRegResponse {
-  data: ServerData;
-}
+// interface ServerData {
+//   token: string;
+//   user: RegUser;
+// }
 
 // Register User
 export const register =
@@ -45,7 +39,7 @@ export const register =
     // Request body
     const body = JSON.stringify({ name, email, password });
     console.log("authAction, register, calling axios-/users");
-    const url = "/users";
+    // const url = "/users";
     axios
       .post("/users", body, config)
       .then((res) => {

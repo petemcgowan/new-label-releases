@@ -1,5 +1,7 @@
 import { ReleaseContext } from "../contexts/ReleaseContext";
-import React, { useContext } from "react";
+// eslint-disable-next-line
+import React from 'react'
+import { useContext } from "react";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,9 +14,8 @@ interface PlayPauseProps {
   trackIndex: number
 }
 
-const PlayPause = ({ playing, songId, isCurrentSong, visible, trackIndex } : PlayPauseProps) => {
+const PlayPause = ({ playing, songId, isCurrentSong, trackIndex } : PlayPauseProps) => {
   const { dispatch } = useContext(ReleaseContext);
-  const style = { visibility: visible ? "visible" : "hidden" };
 
   if (isCurrentSong && playing) {
     return (
@@ -24,7 +25,6 @@ const PlayPause = ({ playing, songId, isCurrentSong, visible, trackIndex } : Pla
           console.log ("Play icon PAUSE, songId:" + songId + ", trackIndex:" +  trackIndex);
           dispatch({ type: "PAUSE" })}
         }
-        // style={style}  //pete todo always visible, but I actually prefer this?
         />
     );
   } else {

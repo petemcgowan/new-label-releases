@@ -1,10 +1,12 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
+// eslint-disable-next-line
+import React from 'react'
+
 import "../styles/formElements.scss";
 import { getToken } from "../utils/spotifyHelpers";
 import { SpotifyCredentials } from "../utils/SpotifyCredentials";
 import { DiscogsCredentials } from "../utils/DiscogsCredentials";
 import { ReleaseContext } from "../contexts/ReleaseContext";
-// import { RecordCrateContext } from "../contexts/RecordCrateContext";
 import { RCContext } from "../cratestate/RCContext";
 import uuid from "uuid/v4";
 import { IReleaseTrack, ISpotifyItem, ISpotifyRelease } from "../types/interfaces";
@@ -13,7 +15,6 @@ import { IDiscogsAxiosResponse, IDiscogsResult, ISpotifyInputObj } from "../type
 //API Info
 const ROOT_URL = "https://api.discogs.com";
 //Discogs API
-// Pete TODO - put these in config obviously
 const discogs = DiscogsCredentials();
 const SIG = `key=${discogs.API_KEY}&secret=${discogs.SECRET}`;
 const SEARCH = "/database/search?";
@@ -24,7 +25,8 @@ const SearchLabelReleases = () => {
   // const { state } = useContext(RecordCrateContext);
   const { stateRC } = useContext(RCContext);
 
-  var [token, setToken] = useState("");
+  // eslint-disable-next-line prefer-const
+  let [token, setToken] = useState("");
 
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
@@ -36,8 +38,8 @@ const SearchLabelReleases = () => {
     }
     console.log("token value:" + token);
 
-    var spotifyInputArr: ISpotifyInputObj[] = [];
-    var axios = require("axios");
+    const spotifyInputArr: ISpotifyInputObj[] = [];
+    const axios = require("axios");
 
     // NOTE: type = master causes issues so I'm omitting it
     // We need & here because key and secret are in the GET
@@ -49,7 +51,7 @@ const SearchLabelReleases = () => {
     const discogsURL =
       ROOT_URL + SEARCH + SIG + searchTerm1 + searchTerm2 + searchTerm3;
     // Pete todo:  Put these in authorization headers in Postman, then try moving that here (as I'd prefer to use headers).  There is also the idea that you should be programmatically creating the token vs through Postman.
-    var config = {
+    const config = {
       method: "get",
       url: discogsURL,
       headers: {},
@@ -74,7 +76,7 @@ const SearchLabelReleases = () => {
 
           console.log(result.title.split(" - "));
           // then slowly create the array that will feed the Spotify calls...
-          let index = result.title.indexOf(" - "); // Gets the first index where a space occurs
+          const index = result.title.indexOf(" - "); // Gets the first index where a space occurs
           let artist = result.title.substr(0, index);
           let name = result.title.substr(index + 1);
 
@@ -83,11 +85,11 @@ const SearchLabelReleases = () => {
           // artist = artist.replace(/[^a-zA-Z0-9]/g, "");  // exludes all Latin alphabet characters
           // Pete TODO: Special cases to deal with "Joel Holmes (3) - Osmosis", "Cody Currie & Joel Holmes (3) - Metropolis"
           artist = artist.replace(
-            /[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,
+            /[`~!@#$%^&*()_|+\-=?;:'",.<>{}[\]\\/]/gi,
             ""
           );
           name = name.replace(
-            /[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi,
+            /[`~!@#$%^&*()_|+\-=?;:'",.<>{}[\]\\/]/gi,
             ""
           );
           console.log("Cleansed: artist:" + artist + ", name:" + name);
@@ -104,8 +106,8 @@ const SearchLabelReleases = () => {
             for (let i = 0; i < result.barcode.length; i++) {
               console.log("result.barcode[i]:" + result.barcode[i]);
               if (
-                result.barcode[i].length == 12 ||
-                result.barcode[i].length == 13
+                result.barcode[i].length === 12 ||
+                result.barcode[i].length === 13
               ) {
                 barCodeOfOurDreams = result.barcode[i];
                 console.log("barCodeOfOurDreams:" + barCodeOfOurDreams);
@@ -123,7 +125,7 @@ const SearchLabelReleases = () => {
           };
           // check if barcode already exists
 
-          var barCodeMatchFound = false;
+          let barCodeMatchFound = false;
           if (spotifyInputObj.barcode !== "") {
             console.log(
               "result.barcode was not blank:" + spotifyInputObj.barcode
@@ -145,7 +147,7 @@ const SearchLabelReleases = () => {
         console.log("SearchLabelReleases, error:" + error);
       });
 
-    let releasesTrackLevel: IReleaseTrack[] = [];
+    const releasesTrackLevel: IReleaseTrack[] = [];
     for (let i = 0; i < spotifyInputArr.length; i++) {
       // spotifyInputArr.forEach(async (spotInput) => {
       console.log(
@@ -156,7 +158,7 @@ const SearchLabelReleases = () => {
       // Pete TODO:  barcode(where available) match check - if there is an element in DC array that barcode matches an element in SP array, we want that, even if the names don't match, because it IS a match regardless (UPCs are unique)
 
       // Call Spotify for each "album" (release).  the artist query bit is set in spotifyHelpers
-      let searchTerms =
+      const searchTerms =
         spotifyInputArr[i].artist +
         encodeURIComponent(" ") +
         "album" +
@@ -165,7 +167,7 @@ const SearchLabelReleases = () => {
       console.log("SearchLabelReleases, searchTerms:" + searchTerms);
 
       const searchTermAssumption = "%20year%3A2020-2021";
-      var searchTermField = searchTerms;
+      let searchTermField = searchTerms;
 
       encodeURIComponent(searchTermField);
       searchTermField += searchTermAssumption;
@@ -180,7 +182,7 @@ const SearchLabelReleases = () => {
             releaseDetail.tracks.items.forEach((trackDetail: ISpotifyItem) => {
               console.log("trackDetail:" + JSON.stringify(trackDetail));
 
-              var releaseTrack = {
+              const releaseTrack = {
                 artists: trackDetail.artists[0].name,
                 href: trackDetail.href,
                 releaseName: releaseDetail.name,
@@ -197,7 +199,7 @@ const SearchLabelReleases = () => {
               };
 
               // Need to filter out release names that are already in the crate....
-              var found = stateRC.recordCrate.some((crateItem) => {
+              const found = stateRC.recordCrate.some((crateItem) => {
                 console.log(
                   "crateItem.releaseName:" +
                     crateItem.releaseName +
@@ -237,7 +239,7 @@ const SearchLabelReleases = () => {
   const searchForTracks = async (token: string, searchTerms: string) => {
     console.log("start of searchForTracks, searchTerms:" + searchTerms);
     // "label" search (i need album too)
-    let queryReleasesUrl =
+    const queryReleasesUrl =
       "https://api.spotify.com/v1/search?q=artist" +
       //abba%20album%3Agold
       encodeURIComponent(":") +
@@ -259,10 +261,10 @@ const SearchLabelReleases = () => {
       "searchForTracks, releaseDataJson:" + JSON.stringify(releaseDataJson)
     );
 
-    let tracks: ISpotifyRelease[] = await Promise.all(
+    const tracks: ISpotifyRelease[] = await Promise.all(
       releaseDataJson.albums.items.map(async (releaseEl: { href: string; }) => {
-        let queryTracksUrl = `${releaseEl.href}`;
-        let trackResult = await fetch(queryTracksUrl, {
+        const queryTracksUrl = `${releaseEl.href}`;
+        const trackResult = await fetch(queryTracksUrl, {
           method: "GET",
           headers: { Authorization: "Bearer " + token },
         });

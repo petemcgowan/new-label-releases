@@ -1,4 +1,6 @@
-import React, { useContext, useEffect} from "react";
+import { useContext, useEffect} from "react";
+// eslint-disable-next-line
+import React from 'react'
 import CrateDetails from "./CrateDetails";
 import { RCContext } from "../cratestate/RCContext";
 import "../styles/uiElements.scss";

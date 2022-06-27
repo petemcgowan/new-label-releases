@@ -1,4 +1,6 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
+// eslint-disable-next-line
+import React from 'react'
 import { LabelsContext } from "../contexts/LabelsContext";
 import LabelsDetails from "./LabelsDetails";
 import "../styles/uiElements.scss";
@@ -9,7 +11,7 @@ const LabelsList = () => {
   useEffect(() => {
     console.log("LabelList, useEffect called");
     const fetchLabels = async () => {
-      let labelData = await searchLabels(searchLabels);  // TS wants a dispatch as arg.  Ok then!
+      const labelData = await searchLabels(searchLabels);  // TS wants a dispatch as arg.  Ok then!
       console.log("LabelsContext:" + labelData);
       // if (!labelData) labelData = [];
       // return labelData ? labelData : [];

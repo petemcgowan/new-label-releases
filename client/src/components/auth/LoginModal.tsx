@@ -1,4 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+/* eslint no-use-before-define: 0 */
+/* typescript-eslint no-use-before-define: 0 */
+import { useState, useEffect, useRef } from "react";
+// eslint-disable-next-line
+import React from 'react'
 import {
   Button,
   Modal,
@@ -20,6 +24,7 @@ import { useAppSelector } from "./reduxHooks";
 
 interface ILoginModal
 {
+  // eslint-disable-next-line no-unused-vars
   login : (args_0: IAuthFunction) => void,
   clearErrors : ()=>void,
 }
@@ -46,6 +51,13 @@ export const LoginModal = ({ login, clearErrors }: ILoginModal) => {
     return ref.current;
   }
 
+  const toggle = () => {
+    console.log("LoginModal, toggle,modal:" + modal);
+    // Clear errors
+    clearErrors();
+    setModal(!modal);
+  };
+
   useEffect(() => {
     console.log("LoginModal, useEffect called");
     // const { error, isAuthenticated } = props;
@@ -71,14 +83,10 @@ export const LoginModal = ({ login, clearErrors }: ILoginModal) => {
         toggle();
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const toggle = () => {
-    console.log("LoginModal, toggle,modal:" + modal);
-    // Clear errors
-    clearErrors();
-    setModal(!modal);
-  };
+
 
   const onChangeEmail = (e: { target: { name: string; value: React.SetStateAction<string>; }; }) => {
     console.log(

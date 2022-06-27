@@ -1,4 +1,6 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
+// eslint-disable-next-line
+import React from 'react'
 import { NavLink } from "reactstrap";
 import { connect } from "react-redux";
 import { logout } from "../../actions/authActions";

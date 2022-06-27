@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
-
+import { useEffect } from "react";
+// eslint-disable-next-line
+import React from 'react'
 import AppNavbar from "./components/AppNavbar";
 import { Provider } from "react-redux";
 import reduxAuthStore from "./reduxAuthStore";

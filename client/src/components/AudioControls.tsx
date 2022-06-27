@@ -1,15 +1,27 @@
-import React from "react";
+import { MouseEventHandler } from "react";
+// eslint-disable-next-line
+import React from 'react'
 import { ReactComponent as Play } from "../images/player/play.svg";
 import { ReactComponent as Pause } from "../images/player/pause.svg";
 import { ReactComponent as Next } from "../images/player/next.svg";
 import { ReactComponent as Prev } from "../images/player/prev.svg";
+
+// type onPlayPauseClickType = (a: boolean) => void;
+
+interface AudioControlsProps {
+  isPlaying: boolean;
+  // eslint-disable-next-line no-unused-vars
+  onPlayPauseClick: (a: boolean) => void;
+  onPrevClick: MouseEventHandler<HTMLButtonElement> | undefined;
+  onNextClick: MouseEventHandler<HTMLButtonElement> | undefined;
+}
 
 const AudioControls = ({
   isPlaying,
   onPlayPauseClick,
   onPrevClick,
   onNextClick,
-}) => (
+}: AudioControlsProps) => (
   <div className="audio-controls">
     <button
       type="button"

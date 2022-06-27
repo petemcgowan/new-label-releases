@@ -1,4 +1,6 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
+// eslint-disable-next-line
+import React from 'react'
 import { ReleaseContext } from "../contexts/ReleaseContext";
 // import { RecordCrateContext } from "../contexts/RecordCrateContext";
 import { RCContext } from "../cratestate/RCContext";
@@ -6,7 +8,7 @@ import "../styles/formElements.scss";
 import { /*searchForTracksWhittler,*/ getToken } from "../utils/spotifyHelpers";
 import { SpotifyCredentials } from "../utils/SpotifyCredentials";
 import uuid from "uuid/v4";
-import { IRelease, IReleaseTrack, ISpotifyRelease, ISpotifyItem } from "../types/interfaces";
+import { IReleaseTrack, ISpotifyRelease, ISpotifyItem } from "../types/interfaces";
 
 
 const SearchReleaseForm = () => {
@@ -15,7 +17,8 @@ const SearchReleaseForm = () => {
   // const { state } = useContext(RecordCrateContext);
   const { stateRC } = useContext(RCContext);
   const [searchTerms, setSearchTerms] = useState("");
-  var [token, setToken] = useState("");
+  // eslint-disable-next-line prefer-const
+  let [token, setToken] = useState("");
 
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
@@ -31,7 +34,7 @@ const SearchReleaseForm = () => {
     // const testingSearchTerms = 'black%20loops%20year%3A2019-2020';
     const searchTermAssumption = "%20year%3A2019-2020";
     // const testingSearchTerms = 'black%20loops%20year%3A2019-2020';
-    var searchTermField = searchTerms;
+    let searchTermField = searchTerms;
     // e.g. black%20loops
     //const searchTermField = UICtrl.inputField().searchTerms;
 
@@ -39,7 +42,7 @@ const SearchReleaseForm = () => {
     encodeURIComponent(searchTermField);
     searchTermField += searchTermAssumption;
     // get the list of releases
-    var releasesTrackLevel: IReleaseTrack[] = [];
+    const releasesTrackLevel: IReleaseTrack[] = [];
     if (token !== "" && token !== undefined) {
       await searchForTracks(token, searchTerms).then((releaseDetails: ISpotifyRelease[]) => {
         // this is RELEASE level e.g. EP
@@ -50,7 +53,7 @@ const SearchReleaseForm = () => {
           releaseDetail.tracks.items.forEach((trackItem: ISpotifyItem) => {
             console.log("trackDetail:" + JSON.stringify(trackItem));
 
-            var releaseTrack = {
+            const releaseTrack = {
               artists: trackItem.artists[0].name,
               href: trackItem.href,
               releaseName: releaseDetail.name,
@@ -74,7 +77,7 @@ const SearchReleaseForm = () => {
             console.log(
               "SearchReleaseForm, state(rc):" + JSON.stringify(stateRC)
             );
-            var found = stateRC.recordCrate.some((crateItem) => {
+            const found = stateRC.recordCrate.some((crateItem) => {
               console.log(
                 "crateItem.releaseName:" +
                   crateItem.releaseName +
@@ -140,11 +143,11 @@ const SearchReleaseForm = () => {
       "searchForTracks, releaseDataJson:" + JSON.stringify(releaseDataJson)
     );
 
-    let tracks: ISpotifyRelease[] = await Promise.all(
+    const tracks: ISpotifyRelease[] = await Promise.all(
       releaseDataJson.albums.items.map(async (releaseEl: { href: string; }) => {
-        let queryTracksUrl = `${releaseEl.href}`;
+        const queryTracksUrl = `${releaseEl.href}`;
         console.log("queryTracksUrl:" + queryTracksUrl);
-        let trackResult = await fetch(queryTracksUrl, {
+        const trackResult = await fetch(queryTracksUrl, {
           method: "GET",
           headers: { Authorization: "Bearer " + token },
         });

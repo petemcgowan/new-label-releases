@@ -8,14 +8,14 @@ import { getEmail } from "../utils/helpers";
 
 const NewCrateItemForm = () => {
   // const { addRecordCrateNew } = useContext(RecordCrateContext);
-  const { stateRC, dispatchRC } = useContext(RCContext);
+  const { dispatchRC } = useContext(RCContext);
   const [artists, setArtists] = useState("");
   const [releaseName, setReleaseName] = useState("");
 
   const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
-    let recordCrateItem: IRecord = {
+    const recordCrateItem: IRecord = {
       id: "dummy",
       artists: artists,
       releaseName: releaseName,

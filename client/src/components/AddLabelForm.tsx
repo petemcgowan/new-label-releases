@@ -1,4 +1,7 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
+// eslint-disable-next-line
+import React from 'react'
+
 import { LabelsContext } from "../contexts/LabelsContext";
 import "../styles/formElements.scss";
 

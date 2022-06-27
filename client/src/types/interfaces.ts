@@ -27,11 +27,11 @@ export interface IAuthForm {
 }
 
 export interface ILoginModal extends IAuthForm {
-  login(user: IUser): void;
+  login(): void;
 }
 
 export interface IRegisterModal extends IAuthForm {
-  register(user: IUser): void;
+  register(): void;
 }
 
 export interface ILogoutProps {
@@ -75,7 +75,7 @@ export interface IItem {
 
 export interface IItemModal {
   isAuthenticated: boolean;
-  addItem(item: IItem): void;
+  addItem(): void;
 }
 
 export interface IItemReduxProps extends IAuthReduxProps {

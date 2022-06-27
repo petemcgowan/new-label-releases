@@ -1,8 +1,10 @@
-import React, { createContext, useReducer } from "react";
+import { createContext, useReducer } from "react";
+// eslint-disable-next-line
+import React from 'react'
 import AppReducer from "../reducers/AppReducer";
 import reduxAuthStore from "../reduxAuthStore";
 
-import { ADD_LOGGED_IN_EMAIL, GLOBAL_ERROR } from "../actions/types";
+import { ADD_LOGGED_IN_EMAIL } from "../actions/types";
 
 // Initial state
 const initialState = {
@@ -28,7 +30,7 @@ export const GlobalProvider = ({ children }:Props) => {
     // try {
       // const state = reduxAuthStore.getState();
       const auth = reduxAuthStore.getState().auth;
-      var email = "";
+      let email = "";
       if (auth.user != null) {
         email = auth.user.email;
       }

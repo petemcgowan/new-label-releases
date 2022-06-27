@@ -1,4 +1,7 @@
-import React, { useEffect, useState, useRef } from "react";
+/* eslint no-use-before-define: 0 */
+import { useEffect, useState, useRef } from "react";
+// eslint-disable-next-line
+import React from 'react'
 import {
   Button,
   Modal,
@@ -11,7 +14,7 @@ import {
   NavLink,
   Alert,
 } from "reactstrap";
-import { connect, useSelector } from "react-redux";
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { register } from "../../actions/authActions";
 import { clearErrors } from "../../actions/errorActions";
@@ -20,6 +23,7 @@ import { IAuthFunction } from "../../types/interfaces";
 
 interface IRegisterModal
 {
+  // eslint-disable-next-line no-unused-vars
   register : (args_0: IAuthFunction) => void,
   clearErrors : ()=>void,
 }
@@ -70,6 +74,7 @@ export const RegisterModal = ({ clearErrors, register }: IRegisterModal) => {
         toggle();
       }
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const toggle = () => {

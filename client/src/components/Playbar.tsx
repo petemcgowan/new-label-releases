@@ -56,7 +56,7 @@ const Playbar = () => {
       />
     );
   }
-  let volumeUp = <FontAwesomeIcon icon={faVolumeUp} />;
+  const volumeUp = <FontAwesomeIcon icon={faVolumeUp} />;
 
   return (
     <div className="Playbar" css={CSS}>

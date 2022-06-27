@@ -1,7 +1,7 @@
 import reduxAuthStore from "../reduxAuthStore";
 
 export const formatTime = (inputSeconds: number) => {
-  let seconds: number = Math.floor(inputSeconds % 60); // e.g. 6 if input is 9
+  const seconds: number = Math.floor(inputSeconds % 60); // e.g. 6 if input is 9
 
   const minutes = Math.floor(inputSeconds / 60);
   if (seconds < 10) return `${minutes}:0${seconds}`;
@@ -17,7 +17,7 @@ export function getEmail() {
   console.log("getEmail, localEmail" + JSON.stringify(localEmail));
 
   const state = reduxAuthStore.getState();
-  var email = "";
+  let email = "";
   if (
     state.auth !== undefined &&
     state.auth !== null &&

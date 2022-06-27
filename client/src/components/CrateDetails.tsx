@@ -1,4 +1,7 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
+// eslint-disable-next-line
+import React from 'react'
+
 import { IRecord} from "../cratestate/RCState";
 import { RCContext } from "../cratestate/RCContext";
 import "../styles/uiElements.scss";

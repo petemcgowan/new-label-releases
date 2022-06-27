@@ -1,4 +1,6 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
+// eslint-disable-next-line
+import React from 'react'
 import { LabelsContext } from "../contexts/LabelsContext";
 import { ILabel } from "../reducers/LabelsReducer";
 import "../styles/uiElements.scss";

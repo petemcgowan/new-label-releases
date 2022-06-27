@@ -1,4 +1,6 @@
-import React, { createContext, useReducer, useEffect } from "react";
+import { createContext, useReducer } from "react";
+// eslint-disable-next-line
+import React from 'react'
 import {initialReleaseState, ReleaseReducer, IInitialReleaseState } from "../reducers/ReleaseReducer";
 
 // Pete Todo: Use IRelease here if possible (same as I do in ReleaseReducer)

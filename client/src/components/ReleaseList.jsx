@@ -2,20 +2,14 @@ import React, {
   useContext,
   useRef,
   useLayoutEffect,
-  useReducer,
   useCallback,
   useState,
 } from "react";
 import ReleaseDetails from "./ReleaseDetails";
 import { ReleaseContext } from "../contexts/ReleaseContext";
 
-import { initialRCState } from "../cratestate/RCState";
-import { rcReducer } from "../cratestate/RCReducer";
-import { RCContext } from "../cratestate/RCContext";
-
 import "../styles/uiElements.scss";
 import "../styles/homepage.scss";
-import { IRelease, IReleaseTrack } from "../types/interfaces";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
@@ -28,9 +22,12 @@ const ReleaseList = () => {
   // useRef is the audio element.  It stores the <audio> reference in the .current field.  so audioRef.current.load() is saying call the load method on the audio element;
 
   // const audioRef = useRef<HTMLAudioElement>(null);
-  const setVolume = useCallback((e) => {
-    dispatch({ type: "SET_VOLUME", volume: e.target.value });
-  }, []);
+  const setVolume = useCallback(
+    (e) => {
+      dispatch({ type: "SET_VOLUME", volume: e.target.value });
+    },
+    [dispatch]
+  );
   const [trackProgress, setTrackProgress] = useState(0);
 
   const audioRef = useRef(
@@ -66,12 +63,12 @@ const ReleaseList = () => {
         audioRef.current.pause();
       }
     }
-  }, [state.playing, state.currentSongId]);
+  }, [state.playing, state.currentSongId, currentRelease]);
 
   useLayoutEffect(() => {
     if (currentRelease && audioRef.current)
       audioRef.current.volume = state.volume;
-  }, [state.volume]);
+  }, [state.volume, currentRelease]);
 
   const startTimer = () => {
     // Clear any timers already running

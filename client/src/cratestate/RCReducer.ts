@@ -1,7 +1,5 @@
 import { IRecord, RCState, initialRCState } from "./RCState";
 import { ActionType, Add, RCActions, Search, Delete, Error } from "./RCActions";
-import axios from "axios";
-import { getEmail } from "../utils/helpers";
 
 export function rcReducer(state: RCState, action: RCActions): RCState {
   console.log(
