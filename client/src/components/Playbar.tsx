@@ -15,7 +15,7 @@ import { formatTime, handleProgress } from "../utils/helpers";
 const Playbar = () => {
   const { state, dispatch } = useContext(ReleaseContext);
 
-  const setVolume = useCallback((e) => {
+  const setVolume = useCallback((e: { target: { value: any; }; }) => {
     dispatch({ type: "SET_VOLUME", volume: e.target.value });
   }, []);
 

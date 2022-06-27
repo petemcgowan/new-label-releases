@@ -4,6 +4,7 @@ import { RCActions } from "./RCActions";
 import { rcReducer } from "./RCReducer";
 
 
+
 export const RCContext = createContext<{
   stateRC: RCState;
   dispatchRC: React.Dispatch<RCActions>;
@@ -12,8 +13,11 @@ export const RCContext = createContext<{
   dispatchRC: () => undefined,
 });
 
+interface Props {
+  children?: any
+}
 
-export const RCContextProvider: React.FC<React.ReactNode> = ({ children }) => {
+export const RCContextProvider = ({ children }:Props) => {
     const [stateRC, dispatchRC] = useReducer(rcReducer, initialRCState);
 
     return (

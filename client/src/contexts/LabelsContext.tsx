@@ -30,7 +30,10 @@ export const LabelsContext = createContext<{
 
 // Create context
 // export const LabelsContext = createContext(labelsInitialState);
-export const LabelsProvider: React.FC<React.ReactNode> = ({ children }) => {
+interface Props {
+  children?: any
+}
+export const LabelsProvider = ({ children }:Props)  => {
 // Provider component
 // export const LabelsProvider = ({ children }) => { //ReleaseReducer, initialReleaseState
 //  const labelsInitialState = () => {

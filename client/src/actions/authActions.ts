@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 import { returnErrors } from "./errorActions";
 import reduxAuthStore from "../reduxAuthStore";
 import {
@@ -50,8 +50,9 @@ export const register =
       .post("/users", body, config)
       .then((res) => {
         console.log(
-          "Successful return from register user, data" +
-            JSON.stringify(res.data)
+          `Successful return from register user, data${JSON.stringify(
+            res.data
+          )}`
         );
         // localStorage.setItem("NLRemail", data.user.email);
         dispatch({
@@ -60,7 +61,7 @@ export const register =
         });
       })
       .catch((err) => {
-        console.log("authAction, register, err:" + err);
+        console.log(`authAction, register, err:${err}`);
         dispatch(
           returnErrors(err.response.data, err.response.status, REGISTER_FAIL)
         );
@@ -73,17 +74,17 @@ export const register =
 // Check token & load user
 export const loadUser =
   () => async (dispatch: Function, getState: Function) => {
-    console.log("authAction, getState1:" + JSON.stringify(getState));
+    console.log(`authAction, getState1:${JSON.stringify(getState)}`);
     console.log(
-      "authAction, getState1().auth:" + JSON.stringify(getState().auth)
+      `authAction, getState1().auth:${JSON.stringify(getState().auth)}`
     );
 
-    const auth = reduxAuthStore.getState().auth;
-    console.log("loadUser, auth.user:" + JSON.stringify(auth.user));
-    let userID: number = -1;
+    const { auth } = reduxAuthStore.getState();
+    console.log(`loadUser, auth.user:${JSON.stringify(auth.user)}`);
+    let userID = -1;
     if (auth.user) {
       // it's initially null
-      console.log("loadUser, auth.user.id:" + auth.user.id);
+      console.log(`loadUser, auth.user.id:${auth.user.id}`);
       userID = auth.user.id;
     }
 
@@ -112,7 +113,7 @@ export const loadUser =
     // PETE  NOTE: I'm changing this get to a post, cause I need to pass the user id
     const res: AxiosResponseUser = await axios.post(
       "/auth/user",
-      { userID: userID },
+      { userID },
       tokenConfig(getState)
       // {
       //   headers: {
@@ -124,13 +125,14 @@ export const loadUser =
 
     // then((res: AxiosResponseUser) => {
     console.log(
-      "loadUser...need to set email in context, res.data:" +
-        JSON.stringify(res.data)
+      `loadUser...need to set email in context, res.data:${JSON.stringify(
+        res.data
+      )}`
     );
     if (res.data) {
-      const email = res.data.data.email;
+      const { email } = res.data.data;
       console.log(
-        "loadUser, setting Local Storage email:" + JSON.stringify(email)
+        `loadUser, setting Local Storage email:${JSON.stringify(email)}`
       );
 
       localStorage.setItem("NLRemail", email);
@@ -140,10 +142,11 @@ export const loadUser =
         payload: email,
       });
     }
-    console.log("authAction, loadUser, getState2:" + JSON.stringify(getState));
+    console.log(`authAction, loadUser, getState2:${JSON.stringify(getState)}`);
     console.log(
-      "authAction, loadUser, getState2().auth:" +
-        JSON.stringify(getState().auth)
+      `authAction, loadUser, getState2().auth:${JSON.stringify(
+        getState().auth
+      )}`
     );
     // })
     // .catch((err) => {
@@ -161,7 +164,7 @@ export const login =
   (dispatch: Function) => {
     // Headers
     console.log(
-      "authAction, login, setting localStorage email" + JSON.stringify(email)
+      `authAction, login, setting localStorage email${JSON.stringify(email)}`
     );
     localStorage.setItem("NLRemail", email);
     const config = {
@@ -177,19 +180,20 @@ export const login =
     axios
       .post("/auth", body, config)
       .then((res) => {
-        console.log("Successful login, res.data:" + JSON.stringify(res.data));
+        console.log(`Successful login, res.data:${JSON.stringify(res.data)}`);
 
         dispatch({
           type: LOGIN_SUCCESS,
           payload: res.data,
         });
         console.log(
-          "login should have updated auth.user:" +
-            JSON.stringify(reduxAuthStore.getState().auth.user)
+          `login should have updated auth.user:${JSON.stringify(
+            reduxAuthStore.getState().auth.user
+          )}`
         );
       })
       .catch((err) => {
-        console.log("authAction, login:" + err);
+        console.log(`authAction, login:${err}`);
 
         dispatch(
           returnErrors(err.response.data, err.response.status, LOGIN_FAIL)
@@ -212,7 +216,7 @@ export const logout = () => {
 // Setup config/headers and token
 export const tokenConfig = (getState: Function) => {
   // Get token from localstorage
-  const token = getState().auth.token;
+  const { token } = getState().auth;
 
   // Headers
   const config: IConfigHeaders = {

@@ -29,7 +29,10 @@ export const ReleaseContext = createContext<{
   dispatch: () => null
 });
 
-const ReleaseContextProvider: React.FC<React.ReactNode> = ({ children }) => {
+interface Props {
+  children?: any
+}
+const ReleaseContextProvider = ({ children }:Props)  => {
   const [state, dispatch] = useReducer(ReleaseReducer, initialReleaseState);
 
   return (

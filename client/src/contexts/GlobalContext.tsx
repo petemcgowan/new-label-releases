@@ -16,7 +16,10 @@ const initialState = {
 // TODO:  In the conversion to Typescript I ditched passing initialState, so keep an eye on this, I assume it needs it?
 export const GlobalContext = createContext<GlobalContextType | null>(null);
 
-export const GlobalProvider: React.FC<React.ReactNode> = ({ children }) => {
+interface Props {
+  children?: any
+}
+export const GlobalProvider = ({ children }:Props) => {
 // Provider component
 // export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);

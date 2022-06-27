@@ -35,3 +35,4 @@ client/src/utils/DiscogsCredentials.js
 client/src/utils/DiscogsCredentials.ts
 .DS_Store
 new-label-releases.code-workspace
+client/src/utils/SpotifyCredentials.ts
