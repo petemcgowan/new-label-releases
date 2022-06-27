@@ -12,7 +12,6 @@ import {
   Container,
 } from "reactstrap";
 import { connect } from "react-redux";
-// import PropTypes from "prop-types";
 import RegisterModal from "./auth/RegisterModal";
 import LoginModal from "./auth/LoginModal";
 import Logout from "./auth/Logout";
@@ -32,33 +31,16 @@ import {
   RCContextProvider /*, state*/,
 } from "../cratestate/RCContext";
 
-// import NewReleaseForm from './NewReleaseForm';
-// import NewCrateItemForm from './NewCrateItemForm';
 import SearchReleaseForm from "./SearchReleasesForm";
 import SearchLabelReleases from "./SearchLabelReleases";
 
 import AddLabelForm from "./AddLabelForm";
 import { useAppSelector } from "./auth/reduxHooks";
-// import { useAudio } from "react-use";
 
-
-
-// interface RootState {
-//   isOpen: boolean
-// }
-
-// const mapState = (state: RootState) => ({
-//   isOpen: state.isOpen,
-// })
-
-// const connector = connect(mapState, null)
-
-// type PropsFromRedux = ConnectedProps<typeof connector>
 
 export const AppNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const auth = useAppSelector((state) => state.auth);
-  // const [state, dispatchRC] = useReducer(rcReducer, initialRCState);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -67,10 +49,6 @@ export const AppNavbar = () => {
   //Pete Todo Note:  Taking out CrateList, SearchLabelReleases and SearchReleaseForm.
 
   const { isAuthenticated, user } = auth;
-  // const [audio, state, controls, ref] = useAudio({
-  //   src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-  //   autoPlay: true,
-  // });
 
   const authFilmLinks = (
     <Fragment>
@@ -101,13 +79,12 @@ export const AppNavbar = () => {
     <Fragment>
       <NavItem>
         <span className="navbar-text mr-3">
-          <strong>{user ? `Welcome ${user.name}` : ""}</strong>
+          {user ? `Welcome ${user.name}` : ""}
         </span>
       </NavItem>
       <NavItem>
         <Logout />
       </NavItem>
-      <div className="container"></div>
     </Fragment>
   );
 
@@ -128,33 +105,18 @@ export const AppNavbar = () => {
         backgroundColor: "black",
       }}
     >
-      {/* <div>
-        {audio}
-        <pre>{JSON.stringify(state, null, 2)}</pre>
-        <button onClick={controls.pause}>Pause</button>
-        <button onClick={controls.play}>Play</button>
-        <br />
-        <button onClick={controls.mute}>Mute</button>
-        <button onClick={controls.unmute}>Un-mute</button>
-        <br />
-        <button onClick={() => controls.volume(0.1)}>Volume: 10%</button>
-        <button onClick={() => controls.volume(0.5)}>Volume: 50%</button>
-        <button onClick={() => controls.volume(1)}>Volume: 100%</button>
-        <br />
-        <button onClick={() => controls.seek(state.time - 5)}>-5 sec</button>
-        <button onClick={() => controls.seek(state.time + 5)}>+5 sec</button>
-      </div> */}
       <Navbar color="dark" dark expand="sm" className="mb-5">
         <Container>
           <NavbarBrand href="/">
             <img
               src={svgLogo2}
-              width="128"
-              height="42"
+              width="96"
+              height="96"
               className="d-inline-block align-top"
               alt="New Label Releases logo"
             />
           </NavbarBrand>
+          New Releases
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -169,13 +131,5 @@ export const AppNavbar = () => {
     </div>
   );
 };
-
-// const mapStateToProps = (state /*: Types.RootState*/) => ({
-//   auth: state.auth,
-// });
-
-// AppNavbar.propTypes = {
-//   auth: PropTypes.object.isRequired,
-// };
 
 export default connect(null, null)(AppNavbar);
