@@ -1,43 +1,51 @@
 {
-  "name": "releaselist",
+  "name": "new-label-releases",
   "version": "0.1.0",
   "private": true,
-  "entry": "./src/index.tsx",
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.12",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.22.0",
+    "babel-loader": "8.0.6",
+    "babel-plugin-styled-components": "^1.10.1",
+    "bootstrap": "^4.6.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.3.3",
+    "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.1",
+    "react-use": "^17.2.4",
+    "reactstrap": "^8.10.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.52.3",
+    "uuid": "^8.3.2",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/bootstrap": "^4.3.1",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
-    "@types/react-redux": "^7.1.7",
     "@types/react-transition-group": "^4.2.3",
     "@types/reactstrap": "^8.4.1",
     "@types/redux": "^3.6.0",
     "@types/redux-saga": "^0.10.5",
     "@types/redux-thunk": "^2.1.0",
     "@types/uuid": "^3.4.7",
-    "axios": "^0.22.0",
-    "babel-loader": "8.0.6",
-    "babel-plugin-styled-components": "^1.10.1",
-    "bootstrap": "^4.5.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.2.2",
-    "react-scripts": "3.4.0",
-    "react-transition-group": "^4.4.1",
-    "react-use": "^17.2.4",
-    "reactstrap": "^8.9.0",
-    "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0",
-    "sass": "^1.52.3",
-    "uuid": "^8.3.2"
+    "@types/react-redux": "^7.1.7",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/react-router-redux": "^5.0.18",
+    "@types/redux-actions": "^2.6.1",
+    "redux-devtools-extension": "^2.13.9",
+    "typescript": "^4.7.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,23 +54,9 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app",
-    "settings": {
-      "react": {
-        "version": "detect"
-      },
-      "import/resolver": {
-        "typescript": {}
-      }
-    },
-    "rules": {
-      "no-unused-vars": "off",
-      "@typescript-eslint/no-use-before-define": [
-        "error"
-      ],
-      "no-use-before-define": "off",
-      "no-unsafe-optional-chaining": "off"
-    }
+    "extends": [
+      "react-app"
+    ]
   },
   "browserslist": {
     "production": [
@@ -75,19 +69,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/react-redux": "^7.1.7",
-    "@types/react-router-dom": "^5.1.3",
-    "@types/react-router-redux": "^5.0.18",
-    "@types/redux-actions": "^2.6.1",
-    "@typescript-eslint/eslint-plugin": "^4.0.1",
-    "@typescript-eslint/parser": "^4.0.1",
-    "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.30.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "redux-devtools-extension": "^2.13.9",
-    "typescript": "^4.7.4"
   },
   "proxy": "http://localhost:5000"
 }
