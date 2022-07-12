@@ -74,9 +74,8 @@ export const loadUser =
     );
 
     const { auth } = reduxAuthStore.getState();
-    console.log(`loadUser, auth.user:${JSON.stringify(auth.user)}`);
     let userID = -1;
-    if (auth.user) {
+    if (auth && auth.user) {
       // it's initially null
       console.log(`loadUser, auth.user.id:${auth.user.id}`);
       userID = auth.user.id;
@@ -180,11 +179,6 @@ export const login =
           type: LOGIN_SUCCESS,
           payload: res.data,
         });
-        console.log(
-          `login should have updated auth.user:${JSON.stringify(
-            reduxAuthStore.getState().auth.user
-          )}`
-        );
       })
       .catch((err) => {
         console.log(`authAction, login:${err}`);

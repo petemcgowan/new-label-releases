@@ -6,10 +6,12 @@ import React, {
   useState,
 } from "react";
 import ReleaseDetails from "./ReleaseDetails";
+import ReleaseDetailsFlex from "./ReleaseDetailsFlex";
 import { ReleaseContext } from "../contexts/ReleaseContext";
 
 import "../styles/uiElements.scss";
 import "../styles/homepage.scss";
+import "./flexTable.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
@@ -103,86 +105,38 @@ const ReleaseList = () => {
 
   return state.releases && state.releases.length ? (
     // <div className="release-list">
-    <div>
-      <div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            color: "white",
-          }}
-        ></div>
-        <div>
-          <table
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              flexWrap: "nowrap",
-              justifyContent: "flex-start",
-              alignItems: "stretch",
-              alignContent: "stretch",
-              width: "100%",
-            }}
-          >
-            <tbody>
-              {state.releases.map((release, index) => {
-                return (
-                  <ReleaseDetails
-                    release={release}
-                    key={release.id}
-                    trackIndex={index}
-                  />
-                );
-              })}
-            </tbody>
-          </table>
-          <audio
-            ref={audioRef}
-            // src={currentRelease ? currentRelease.openSpotUrl : undefined} // full version (if available)
-            src={currentRelease ? currentRelease.previewUrl : undefined} // preview version
-            // type="audio/mpeg"   //this causes a typescript error
-            onLoadedMetadata={() => {
-              if (null !== audioRef.current) {
-                dispatch({
-                  type: "SET_DURATION",
-                  duration: audioRef.current.duration,
-                });
-              }
-            }}
-            onTimeUpdate={(e) => {
-              dispatch({
-                type: "SET_CURRENT_TIME",
-                time: e.target.currentTime,
-              });
-            }}
-          />
-        </div>
-        <AudioPlayer tracks={tracks} />
-        <div className="right">
-          {volumeUp}
-          <input
-            type="range"
-            min="0"
-            max="1"
-            value={state.volume}
-            step="0.01"
-            style={{ marginLeft: 10 }}
-            onChange={setVolume}
-          />
-        </div>
-        <input
-          type="range"
-          value={trackProgress}
-          step="1"
-          min="0"
-          max={state.duration ? state.duration : `${state.duration}`}
-          className="progress"
-          onChange={(e) => onScrub(e.target.value)}
-          onMouseUp={onScrubEnd}
-          onKeyUp={onScrubEnd}
-          style={{ background: trackStyling }}
-        />
+    <div
+      style={{
+        display: "flex",
+        // alignItems: "stretch",
+        alignItems: "center",
+        width: "100%",
+        flexDirection: "row",
+        flex: 1,
+        justifyContent: "center",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          flexWrap: "nowrap",
+          justifyContent: "flex-start",
+          alignItems: "stretch",
+          alignContent: "flex-start",
+          color: "white",
+          // width: "100%",
+        }}
+      >
+        {state.releases.map((release, index) => {
+          return (
+            <ReleaseDetailsFlex
+              release={release}
+              key={release.id}
+              trackIndex={index}
+            />
+          );
+        })}
       </div>
     </div>
   ) : (

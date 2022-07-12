@@ -8,7 +8,7 @@ import { ADD_LOGGED_IN_EMAIL } from "../actions/types";
 
 // Initial state
 const initialState = {
-  loggedInEmail: null, // TODO: hard-coded for testing, populate at log in instead
+  loggedInEmail: null,
   error: null,
   loading: true,
 };
@@ -31,7 +31,7 @@ export const GlobalProvider = ({ children }:Props) => {
       // const state = reduxAuthStore.getState();
       const auth = reduxAuthStore.getState().auth;
       let email = "";
-      if (auth.user != null) {
+      if (auth && auth.user != null) {
         email = auth.user.email;
       }
       console.log("getLoggedInEmail, state" + JSON.stringify(state));

@@ -1,25 +1,51 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "iCiel Gotham", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, "iCiel Gotham", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #553055;
+  background-color: #000;
+  /* background: #553055; */
 }
-.App{
+
+tbody,
+td {
+  /* background-color: rgba(59, 73, 55, 1); */
+  background: rgba(201, 189, 187, 1);
+  /* color: rgba(138, 149, 143, 1); */
+  color: rgba(59, 73, 55, 1);
+}
+
+a:hover {
+  color: white;
+  background-color: rgba(59, 73, 55, 1);
+}
+
+a {
+  color: white;
+  /* background-color: rgba(59, 73, 55, 1); */
+}
+
+label {
+  color: white;
+}
+
+th {
+  color: white;
+}
+
+.App {
   background: #000000;
   margin: 20px auto;
   width: 90%;
   max-width: 700px;
   color: #eee;
 }
-.navbar{
+.navbar {
   padding: 10px 20px;
   text-align: center;
-  background: #000000;
 }
-.navbar h1{
+.navbar h1 {
   margin: 10px 0;
 }
-

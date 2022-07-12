@@ -1,6 +1,6 @@
-import { useContext, useEffect} from "react";
+import { useContext, useEffect } from "react";
 // eslint-disable-next-line
-import React from 'react'
+import React from "react";
 import CrateDetails from "./CrateDetails";
 import { RCContext } from "../cratestate/RCContext";
 import "../styles/uiElements.scss";
@@ -20,11 +20,22 @@ const CrateList = () => {
   }, []);
 
   return stateRC.recordCrate && stateRC.recordCrate.length ? (
-    <div className="crate-list">
+    <div
+      className="crate-list"
+      style={{
+        display: "flex",
+        // alignItems: "stretch",
+        alignItems: "center",
+        width: "100%",
+        flexDirection: "row",
+        flex: 1,
+        justifyContent: "center",
+      }}
+    >
       <table>
         <thead>
           <tr key="headtheball">
-            <th>Release</th>
+            <th>Crate</th>
           </tr>
         </thead>
         <tbody>
