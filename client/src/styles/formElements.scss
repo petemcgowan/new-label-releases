@@ -2,12 +2,19 @@
 form{
   padding: 20px;
 }
+
+// * rgba (59, 73, 55, 1)  // Dark green
+// * rgba (138, 149, 143, 1)  // Teal
+// * rgba (192, 179, 173, 1) // Off-white:
+// * rgba (201, 189, 187, 1)  // Off-white Alt
+
 input[type='text']{
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
   margin: 6px 0;
-  background: #3c1f3c;
+  // background: rgba(192, 179, 173, 1);
+  // background: rgba(201, 189, 187, 1);
   color: #fff;
   border: 0;
 }

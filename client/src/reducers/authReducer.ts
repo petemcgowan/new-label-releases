@@ -12,10 +12,22 @@ import {
 const initialState = {
   token: localStorage.getItem("NLRtoken"),
   email: localStorage.getItem("NLRemail"),
-  isAuthenticated: null,
+  isAuthenticated: true, //PeteJulTodo
   isLoading: false,
   user: null,
 };
+
+// const setupSuccessfulLogin = (state: any| null, action: any) => {
+//   // localStorage.setItem("NLRemail", data.user.email);
+//   localStorage.setItem("NLRtoken", action.payload.token);
+//   localStorage.setItem("NLRemail", action.payload.email);
+//   return {
+//     ...state,
+//     ...action.payload,
+//     isAuthenticated: true,
+//     isLoading: false,
+//   };
+// };
 
 export default function (state = initialState, action: any) {
   switch (action.type) {

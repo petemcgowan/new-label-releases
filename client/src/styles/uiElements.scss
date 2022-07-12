@@ -1,18 +1,24 @@
 .release-list{
   margin: 20px;
+  display: flex;
 }
 .release-list ul{
   padding: 0;
   list-style-type: none;
 }
 .release-list li{
-  background: #6d3d6d;
-  // background: hotpink;
+  // background-color: rgba(59, 73, 55, 1);
+  color: white;
   border-radius: 4px;
   padding: 10px;
   cursor: pointer;
   margin: 10px 0;
 }
+
+.release-list table{
+  background-color: "hotpink";
+}
+
 
 .release-list li:hover{
   opacity: 0.7;
@@ -35,7 +41,8 @@
   list-style-type: none;
 }
 .crate-list td{
-  background: #1f5724;
+  background-color: rgba(59, 73, 55, 1);
+  color: white;
   border-radius: 4px;
   padding: 10px;
   cursor: pointer;
@@ -57,5 +64,6 @@
 
 .empty{
   margin: 20px;
+  color: white;
   text-align: center;
 }

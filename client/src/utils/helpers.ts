@@ -41,6 +41,6 @@ export function getEmail() {
   }
   console.log("getEmail, state" + JSON.stringify(state));
   //Pete Removing hack
-  return email;
-  // return "Jun19@gmail.com";
+  // return email;
+  return "Jul11-2022@gmail.com";
 }

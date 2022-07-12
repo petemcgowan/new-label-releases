@@ -1,5 +1,6 @@
 html {
     min-height: 100%;
+    background-color: "black";
     margin: 0;
     padding: 0;
     border: 0;
@@ -11,12 +12,15 @@ html, body {
     height: 100%;
     border: 0;
     margin: 0;
+    background-color: "black";
     padding: 0;
 }
 
 body {
-    font-family: 'iCiel Gotham', sans-serif;
-    color: #b7c7bd;
+    font-family: 'iCiel', sans-serif;
+    // color: #b7c7bd;
+    color: "white";
+    background-color: "black";
     line-height: 1.2;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
