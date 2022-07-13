@@ -13,6 +13,9 @@ import PlayPause from "./PlayPause";
 import { addAxiosRecord } from "../cratestate/RCActions";
 import { IReleaseTrack } from "../types/interfaces";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+
 const nullw500 = require("../images/nullw500.png");
 
 interface ReleaseRowProps {
@@ -49,8 +52,6 @@ const ReleaseDetailsFlex = ({ release, trackIndex }: ReleaseRowProps) => {
             visible={playVisibleId === release.id}
             trackIndex={trackIndex}
           />
-          <span style={{ marginRight: 10 }} />
-          <span style={{ marginRight: 10 }} />
         </div>
         <div className="flex-row" role="cell">
           <img
@@ -70,6 +71,7 @@ const ReleaseDetailsFlex = ({ release, trackIndex }: ReleaseRowProps) => {
         </div>
         <div className="flex-row" role="cell">
           <button
+            style={{ backgroundColor: "black" }}
             onClick={() => {
               console.log(
                 "Adding crate item, release.releaseName:" +
@@ -93,7 +95,7 @@ const ReleaseDetailsFlex = ({ release, trackIndex }: ReleaseRowProps) => {
               // addRecordCrateNew(recordCrateItem);
             }}
           >
-            Add to Cart
+            <FontAwesomeIcon style={{ fontSize: "24px" }} icon={faCartPlus} />
           </button>
         </div>
       </div>

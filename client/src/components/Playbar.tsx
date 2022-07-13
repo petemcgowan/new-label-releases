@@ -11,11 +11,10 @@ import { IReleaseTrack } from "../types/interfaces";
 
 import { formatTime, handleProgress } from "../utils/helpers";
 
-
 const Playbar = () => {
   const { state, dispatch } = useContext(ReleaseContext);
 
-  const setVolume = useCallback((e: { target: { value: any; }; }) => {
+  const setVolume = useCallback((e: { target: { value: any } }) => {
     dispatch({ type: "SET_VOLUME", volume: e.target.value });
   }, []);
 
@@ -44,7 +43,10 @@ const Playbar = () => {
       <FontAwesomeIcon
         icon={faPause}
         onClick={() => dispatch({ type: "PAUSE" })}
-        style={{ transform: state.playing ? "" : "translateX(1.5px)" }}
+        style={{
+          transform: state.playing ? "" : "translateX(1.5px)",
+          width: 100,
+        }}
       />
     );
   } else {
@@ -52,7 +54,10 @@ const Playbar = () => {
       <FontAwesomeIcon
         icon={faPlay}
         onClick={() => dispatch({ type: "PLAY", currentRelease })}
-        style={{ transform: state.playing ? "" : "translateX(1.5px)" }}
+        style={{
+          transform: state.playing ? "" : "translateX(1.5px)",
+          width: 100,
+        }}
       />
     );
   }
@@ -137,7 +142,9 @@ const CSS = css`
 
     .fa-play,
     .fa-pause {
-      font-size: 14px;
+      font-size: 28px;
+      width: 35px;
+      height: 35px;
     }
 
     .play-pause-circle {

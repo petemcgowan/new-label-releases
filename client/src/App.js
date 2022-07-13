@@ -1,5 +1,5 @@
 import { useState, useEffect, Fragment } from "react";
-import logo from "./logo.svg";
+import logo from "./images/vinyl2.png";
 import "./App.css";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import { Labels } from "./screens/Labels";
