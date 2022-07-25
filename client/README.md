@@ -1,68 +1,105 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## New Label Releases
 
-## Available Scripts
+> New Label Releases research/crate
 
-In the project directory, you can run:
+## Architecture
 
-### `npm start`
+<img src="docs/images/nlr-architecture.png" width="100%" />
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## What the app is for
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The app is aimed at a user who wishes to keep track of new or recent musical releases, primarily based on record labels. This is due a sort of anti-label bias by streaming services such as Spotify. It's quite difficult to find information about record labels on the service and also difficult to categorise or even search by label. The functionality really doesn't exist.
 
-### `npm test`
+Yet DJs tend to think about music in terms of these modern day "umbrellas". If one knows of more than 1 release by a label such as "Toy Tonics", or "Shall Not Fade", there's a good chance it might be worth keeping an eye on that label's output in case of any future releases that might also be good. It's not untypical for a label to keep within the same style of releases, "jazzy deep house", "J Dilla style funk", etc
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Therefore if a user can keep track of labels, and also the recent releases by those labels, that's likely a good way to sift through the circa 30,000 songs released DAILY to streaming services.
 
-### `npm run build`
+## Approaches and APIs
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+But how to do this when Spotify is so coy about label info? There's no clean/one size fits all method to doing it. Because of this I ended up with a hybrid approach.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Spotify have a good API for releases/release information, track previews, album art. Discogs are more label focused, but of course they do much more than digital, originally focusing solely on vinyl. In fact they focus on so many formats, their own label now can mean more than just label, it could mean "entity of any kind".
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+But record hunting has always been an inexact science. This app aims to beat a path through the dross that gets released, to give a 95% look at what one wants, which should be enough to fill hundreds of DJ sets or playlists if so desired.
 
-### `npm run eject`
+TODO: Comb through the code and explain exactly the link up I created between Discogs and Spotify.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Discogs
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+TODO: Talk about how this app originally focused on Discogs, but it didn't have the information I needed so had to switch tracks.
+TODO: That Postman collection could be a project in its own right.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Technical details
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This is a full stack app using:
 
-## Learn More
+- React JS / ES7 / Webpack
+- PostgresSQL
+- Sequilize
+- React Hooks
+- React State
+- Node / Express, Npm
+- SCSS / CSS
+- Adobe Illustrator
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- TODO: Run app, document your steps
+- TODO: Include Spotify and Discogs API links.
+- TODO: Pull the postgres md file I made on database commands. Have that as appendix?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Main app components
 
-### Code Splitting
+Release search and release "crate":
+<img src="docs/images/artist-release-search.png" width="100%" />
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Song Playbar:
+<img src="docs/images/playbar-nlr.png" width="100%" />
 
-### Analyzing the Bundle Size
+Adding a label:
+<img src="docs/images/label-add.png" width="100%" />
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Adding a label:
+<img src="docs/images/record-crate.png" width="100%" />
 
-### Making a Progressive Web App
+## PostgresSQL
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Start PGAdmin
+If you're running a local copy of the database, create the schemas locally using PGAdmin. More info on PgAdmin here:
+https://www.pgadmin.org
 
-### Advanced Configuration
+## Database schema
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+The database is called newlabelreleases.
 
-### Deployment
+- labels - the labels each user wishes to keep track of
+- recordCrates - the tracks the user has identified for further perusal
+- users - each user that has access to the system
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+TODO: When I deploy this elsewhere, give the URL, access info etc.
 
-### `npm run build` fails to minify
+## Usage
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
+change config.env file in config folder
+```
+
+```
+ npm install
+ cd client npm install
+ cd ..
+
+ # Run front and backend
+ npm run dev
+
+ # Backend only
+ npm run server
+
+ # Frontend only
+ npm run client
+
+ # Build client
+ cd client
+ npm run build
+
+ # Prod
+ npm start
+```

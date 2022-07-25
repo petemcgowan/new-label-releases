@@ -2,6 +2,10 @@
 
 > New Label Releases research/crate
 
+## Architecture
+
+<img src="docs/images/nlr-architecture.png" width="100%" />
+
 ## What the app is for
 
 The app is aimed at a user who wishes to keep track of new or recent musical releases, primarily based on record labels. This is due a sort of anti-label bias by streaming services such as Spotify. It's quite difficult to find information about record labels on the service and also difficult to categorise or even search by label. The functionality really doesn't exist.
@@ -44,17 +48,17 @@ This is a full stack app using:
 
 ## Main app components
 
-Adding a label:
-<img src="docs/images/labels-nlr.png" width="100%" />
-
 Release search and release "crate":
-<img src="docs/images/main-nlr.png" width="100%" />
+<img src="docs/images/artist-release-search.png" width="100%" />
 
-Release search and release "crate":
+Song Playbar:
 <img src="docs/images/playbar-nlr.png" width="100%" />
 
-Release search and release "crate":
-<img src="docs/images/track-search-nlr.png" width="100%" />
+Adding a label:
+<img src="docs/images/label-add.png" width="100%" />
+
+Adding a label:
+<img src="docs/images/record-crate.png" width="100%" />
 
 ## PostgresSQL
 
